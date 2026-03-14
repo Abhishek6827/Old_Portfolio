@@ -13,7 +13,7 @@ export default function App() {
         <motion.main
           key={location.pathname}
           className="pt-20 pb-12 px-4 relative"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{

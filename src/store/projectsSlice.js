@@ -137,6 +137,22 @@ export const fetchProjects = createAsyncThunk(
         category: "Utility",
         featured: true,
       },
+      Social_Connect: {
+        description:
+          "A full-stack social connection application with seamless user interaction, advanced frontend interfaces, and robust backend data processing.",
+        technologies: ["Angular", "Node.js", "Express", "MongoDB", "TypeScript"],
+        demo: "https://social-media-lemon-six.vercel.app/login",
+        category: "Utility",
+        featured: true,
+      },
+      Youtube_Automation: {
+        description:
+          "An intelligent workflow application designed to automate and manage YouTube content creation, leveraging modern AI and media processing toolkits.",
+        technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Generative AI"],
+        demo: "https://yt-automation-beta.vercel.app/",
+        category: "Productivity",
+        featured: true,
+      },
     };
 
     const availableRepos = data.map((repo) => repo.name);
@@ -158,6 +174,8 @@ export const fetchProjects = createAsyncThunk(
       "RPS",
       "Tic-Tac-Toe",
       "Tempusmail",
+      "Social_Connect",
+      "Youtube_Automation",
     ].filter((name) => availableRepos.includes(name));
 
     console.log("Projects to keep:", projectsToKeep);
@@ -197,25 +215,31 @@ export const fetchProjects = createAsyncThunk(
       };
     });
 
-    // Add Tempusmail if not in GitHub repos
-    if (!availableRepos.includes("Tempusmail")) {
-      const tempusmailDetails = projectDetails["Tempusmail"];
-      mappedProjects.unshift({
-        id: "tempusmail-custom",
-        name: "Tempusmail",
-        description: tempusmailDetails.description,
-        technologies: tempusmailDetails.technologies,
-        demo: tempusmailDetails.demo,
-        backend: tempusmailDetails.backend,
-        category: tempusmailDetails.category,
-        featured: tempusmailDetails.featured,
-        stargazers_count: 0,
-        updated_at: new Date().toISOString(),
-        deployStatus: "idle",
-        deployedUrl: tempusmailDetails.demo,
-        html_url: null, // No GitHub repo
-      });
-    }
+    // Add manual fallback projects if not in GitHub repos
+    const customProjects = ["Tempusmail", "Social_Connect", "Youtube_Automation"];
+    
+    customProjects.forEach((customName) => {
+      if (!availableRepos.includes(customName)) {
+        const customDetails = projectDetails[customName];
+        if (customDetails) {
+          mappedProjects.unshift({
+            id: `${customName.toLowerCase()}-custom`,
+            name: customName.replace(/_/g, " "),
+            description: customDetails.description,
+            technologies: customDetails.technologies,
+            demo: customDetails.demo,
+            backend: customDetails.backend || null,
+            category: customDetails.category,
+            featured: customDetails.featured || false,
+            stargazers_count: 0,
+            updated_at: new Date().toISOString(),
+            deployStatus: "idle",
+            deployedUrl: customDetails.demo,
+            html_url: null, // No GitHub repo
+          });
+        }
+      }
+    });
 
     return mappedProjects;
   }

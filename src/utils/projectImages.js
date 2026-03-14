@@ -97,6 +97,15 @@ import TempusmailImage3 from "../images/Tempusmail/3.png";
 import TempusmailImage4 from "../images/Tempusmail/4.png";
 import TempusmailImage5 from "../images/Tempusmail/5.png";
 
+// Social Connect Images
+import SocialConnectImage1 from "../images/Social_Connect/Image1.png";
+import SocialConnectImage2 from "../images/Social_Connect/Image2.png";
+import SocialConnectImage3 from "../images/Social_Connect/Image3.png";
+import SocialConnectImage4 from "../images/Social_Connect/Image4.png";
+
+// Youtube Automation Images
+import YoutubeAutomationImage1 from "../images/Youtube_Automation/Image1.png";
+
 export const amazonImages = [AmazonImage1, AmazonImage2];
 export const CommerceImages = [Commerce1, Commerce2];
 export const currencyConverterImages = [CurrencyConverterImage1];
@@ -113,6 +122,15 @@ export const tempusmailImages = [
   TempusmailImage4,
   TempusmailImage5,
 ];
+
+export const socialConnectImages = [
+  SocialConnectImage1,
+  SocialConnectImage2,
+  SocialConnectImage3,
+  SocialConnectImage4,
+];
+
+export const youtubeAutomationImages = [YoutubeAutomationImage1];
 
 export const myntraImages = [
   MyntraImage1,
@@ -217,6 +235,10 @@ export const getProjectImages = (projectName) => {
     Calculator: calculatorImages,
     "Bharat-Clock": bharatClockImages,
     Tempusmail: tempusmailImages,
+    "Social Connect": socialConnectImages,
+    Social_Connect: socialConnectImages,
+    "Youtube Automation": youtubeAutomationImages,
+    Youtube_Automation: youtubeAutomationImages,
   };
   return imageMap[projectName] || null;
 };

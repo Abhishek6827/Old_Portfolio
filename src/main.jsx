@@ -45,11 +45,15 @@ function SmoothScrollWrapper({ children }) {
   return children;
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const rootElement = document.getElementById("root");
+if (!rootElement.__reactRoot) {
+  rootElement.__reactRoot = ReactDOM.createRoot(rootElement);
+}
+
+rootElement.__reactRoot.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-
         <SmoothScrollWrapper>
           <Routes>
             <Route path="/" element={<App />}>
