@@ -1,4 +1,3 @@
-// utils/techIcons.js
 import {
   FaReact,
   FaJsSquare,
@@ -7,6 +6,7 @@ import {
   FaBootstrap,
   FaNodeJs,
   FaPython,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -19,8 +19,9 @@ import {
   SiPostgresql,
   SiMongodb,
   SiExpress,
+  SiPrisma,
 } from "react-icons/si";
-import { Code, Database } from "lucide-react";
+import { Code, Database, Sparkles } from "lucide-react";
 
 export const getTechIcon = (tech) => {
   const iconMap = {
@@ -44,6 +45,9 @@ export const getTechIcon = (tech) => {
     Recharts: <Code className="text-cyan-400" />,
     "Binance API": <Database className="text-yellow-400" />,
     "RESTful APIs": <Code className="text-green-400" />,
+    Prisma: <SiPrisma className="text-blue-500" />,
+    Angular: <FaAngular className="text-red-600" />,
+    "Generative AI": <Sparkles className="text-yellow-400" />,
   };
   return iconMap[tech] || <Code className="text-gray-400" />;
 };

@@ -148,7 +148,7 @@ export const fetchProjects = createAsyncThunk(
       Youtube_Automation: {
         description:
           "An intelligent workflow application designed to automate and manage YouTube content creation, leveraging modern AI and media processing toolkits.",
-        technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Generative AI"],
+        technologies: ["Next.js", "Prisma", "PostgreSQL", "Generative AI"],
         demo: "https://yt-automation-beta.vercel.app/",
         category: "Productivity",
         featured: true,
@@ -160,6 +160,9 @@ export const fetchProjects = createAsyncThunk(
 
     // Make sure these names match exactly with your GitHub repo names
     const projectsToKeep = [
+      "Social_Connect",
+      "Youtube_Automation",
+      "Tempusmail",
       "Myntra",
       "Amazon",
       "Kanban_WorkBoard",
@@ -173,9 +176,6 @@ export const fetchProjects = createAsyncThunk(
       "Password_Generator",
       "RPS",
       "Tic-Tac-Toe",
-      "Tempusmail",
-      "Social_Connect",
-      "Youtube_Automation",
     ].filter((name) => availableRepos.includes(name));
 
     console.log("Projects to keep:", projectsToKeep);
@@ -216,7 +216,7 @@ export const fetchProjects = createAsyncThunk(
     });
 
     // Add manual fallback projects if not in GitHub repos
-    const customProjects = ["Tempusmail", "Social_Connect", "Youtube_Automation"];
+    const customProjects = ["Tempusmail", "Youtube_Automation", "Social_Connect"];
     
     customProjects.forEach((customName) => {
       if (!availableRepos.includes(customName)) {

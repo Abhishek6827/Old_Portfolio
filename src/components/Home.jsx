@@ -26,12 +26,29 @@ import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import SkillsComponent from "./Skills";
 import ExperienceComponent from "./Experience";
 import { getProjectImages } from "../utils/projectImages";
+import { getTechIcon } from "../utils/techIcons";
 
 // Featured projects data
 // components/Home.jsx (Hero section)
 // Update the featuredProjects array to use your local images:
 
 const featuredProjects = [
+  {
+    name: "Social Connect",
+    images: getProjectImages("Social_Connect"),
+    demo: "https://social-media-lemon-six.vercel.app/login",
+    tech: ["Angular", "Node.js", "MongoDB"],
+    description: "Social connection application with advanced frontend interfaces.",
+    color: "from-indigo-500 to-purple-600",
+  },
+  {
+    name: "Youtube Automation",
+    images: getProjectImages("Youtube_Automation"),
+    demo: "https://yt-automation-beta.vercel.app/",
+    tech: ["Next.js", "AI", "PostgreSQL"],
+    description: "Automated YouTube content creation workflow using AI.",
+    color: "from-red-500 to-rose-600",
+  },
   {
     name: "Tempusmail",
     images: getProjectImages("Tempusmail"),
@@ -636,9 +653,10 @@ function Hero() {
                         {featuredProjects[currentProject].tech.map((tech) => (
                           <span
                             key={tech}
-                            className={`bg-gradient-to-r ${featuredProjects[currentProject].color} bg-opacity-20 text-white px-2 py-1 rounded text-xs font-medium`}
+                            className={`flex items-center space-x-1 bg-gray-700/50 text-gray-300 px-2 py-1 rounded text-xs font-medium`}
                           >
-                            {tech}
+                            {getTechIcon(tech)}
+                            <span>{tech}</span>
                           </span>
                         ))}
                       </div>

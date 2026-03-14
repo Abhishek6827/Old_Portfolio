@@ -233,7 +233,7 @@ export default function Footer() {
 
           <div className="flex items-center space-x-4">
             <span className="text-gray-400 text-sm">
-              © 2025 All rights reserved
+              © 2026 All rights reserved
             </span>
             <motion.button
               onClick={scrollToTop}
