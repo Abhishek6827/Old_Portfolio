@@ -140,7 +140,7 @@ export const fetchProjects = createAsyncThunk(
       Social_Connect: {
         description:
           "A full-stack social connection application with seamless user interaction, advanced frontend interfaces, and robust backend data processing.",
-        technologies: ["Angular", "Node.js", "Express", "MongoDB", "TypeScript"],
+        technologies: ["Angular", "Node.js", "Express", "MongoDB"],
         demo: "https://social-media-lemon-six.vercel.app/login",
         category: "Utility",
         featured: true,
