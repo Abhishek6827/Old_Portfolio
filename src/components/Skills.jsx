@@ -11,6 +11,7 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -26,6 +27,10 @@ import {
   SiTelegram,
   SiStripe,
   SiZoho,
+  SiSocketdotio,
+  SiPostgresql,
+  SiPrisma,
+  SiVercel,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -52,6 +57,8 @@ export default function Skills() {
         { name: "JavaScript", icon: <FaJsSquare />, level: 90 },
         { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 90 },
         { name: "Redux", icon: <SiRedux />, level: 85 },
+        { name: "Angular", icon: <FaAngular />, level: 78 },
+        { name: "Socket.io", icon: <SiSocketdotio />, level: 82 },
         { name: "HTML5", icon: <FaHtml5 />, level: 95 },
         { name: "CSS3", icon: <FaCss3Alt />, level: 92 },
       ],
@@ -66,6 +73,8 @@ export default function Skills() {
         { name: "MongoDB", icon: <SiMongodb />, level: 80 },
         { name: "Python", icon: <FaPython />, level: 75 },
         { name: "Django", icon: <SiDjango />, level: 70 },
+        { name: "PostgreSQL", icon: <SiPostgresql />, level: 78 },
+        { name: "Prisma", icon: <SiPrisma />, level: 80 },
         { name: "MySQL", icon: <SiMysql />, level: 75 },
       ],
     },
@@ -89,6 +98,7 @@ export default function Skills() {
         { name: "Firebase CLI", icon: <SiFirebase />, level: 85 },
         { name: "Firebase Hosting", icon: <SiFirebase />, level: 88 },
         { name: "Ngrok", icon: <Globe />, level: 80 },
+        { name: "Vercel", icon: <SiVercel />, level: 85 },
         { name: "VS Code", icon: <Code2 />, level: 92 },
         { name: "Firebase Emulators", icon: <SiFirebase />, level: 82 },
       ],

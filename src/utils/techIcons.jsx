@@ -20,8 +20,12 @@ import {
   SiMongodb,
   SiExpress,
   SiPrisma,
+  SiSocketdotio,
+  SiAssemblyai,
+  SiWebrtc,
+  SiFfmpeg,
 } from "react-icons/si";
-import { Code, Database, Sparkles } from "lucide-react";
+import { Code, Database, Sparkles, Video, Clock, Shield } from "lucide-react";
 
 export const getTechIcon = (tech) => {
   const iconMap = {
@@ -48,6 +52,15 @@ export const getTechIcon = (tech) => {
     Prisma: <SiPrisma className="text-blue-500" />,
     Angular: <FaAngular className="text-red-600" />,
     "Generative AI": <Sparkles className="text-yellow-400" />,
+    "Socket.io": <SiSocketdotio className="text-white" />,
+    WebRTC: <SiWebrtc className="text-green-400" />,
+    AssemblyAI: <SiAssemblyai className="text-blue-400" />,
+    FFmpeg: <SiFfmpeg className="text-green-500" />,
+    Tailwind: <SiTailwindcss className="text-cyan-400" />,
+    NextAuth: <Shield className="text-purple-400" />,
+    "node-cron": <Clock className="text-orange-400" />,
+    "Material UI": <Code className="text-blue-300" />,
+    "Passport.js": <Shield className="text-green-400" />,
   };
   return iconMap[tech] || <Code className="text-gray-400" />;
 };
