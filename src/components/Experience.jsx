@@ -18,7 +18,7 @@ export default function Experience() {
     {
       title: "Full Stack Developer",
       company: "Indian Capital and Investment (Coimbatore) Limited",
-      period: "11/2025 - 01/2026",
+      period: "11/2025 - 03/2026",
       responsibilities: [
         "Developed secure payment gateway integration using Stripe and Zoho Payments.",
         "Built scalable backend services with Next.js and Firebase for real-time data handling.",
