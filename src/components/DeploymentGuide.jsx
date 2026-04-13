@@ -33,7 +33,7 @@ export default function DeploymentGuide() {
     { name: "Calculator", type: "Vanilla JS", status: "ready" },
     { name: "Elante_Mall", type: "React", status: "ready" },
     { name: "Skill_Up", type: "React", status: "ready" },
-    { name: "Portfolio", type: "React", status: "deployed" },
+    { name: "Old_Portfolio", type: "React", status: "deployed" },
   ];
 
   const deploymentSteps = [
@@ -70,7 +70,7 @@ export default function DeploymentGuide() {
       steps: [
         "Check the live URL",
         "Test all functionality",
-        "Update portfolio with live links",
+        "Update Old_Portfolio with live links",
       ],
     },
   ];
@@ -331,7 +331,7 @@ export default function DeploymentGuide() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {projects
-              .filter((p) => p.name !== "Portfolio")
+              .filter((p) => p.name !== "Old_Portfolio")
               .map((project, index) => (
                 <motion.div
                   key={project.name}

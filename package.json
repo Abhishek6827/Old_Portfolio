@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "Old_Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abhishek6827.github.io/Portfolio/",
+  "homepage": "https://abhishek6827.github.io/Old_Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

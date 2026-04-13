@@ -237,7 +237,7 @@ export default function Projects() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Explore my portfolio of{" "}
+            Explore my Old_Portfolio of{" "}
             <span className="text-purple-400 font-semibold">
               web applications
             </span>

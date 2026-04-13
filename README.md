@@ -9,7 +9,7 @@
 <br/>
 
 <!-- Top Badges -->
-<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-Visit_Now-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>&nbsp;
+<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Old_Portfolio-Visit_Now-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/abhishek-tiwariiii"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
 <a href="mailto:abhishektiwari6827@gmail.com"><img src="https://img.shields.io/badge/Gmail-Hire_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;
 <img src="https://komarev.com/ghpvc/?username=Abhishek6827&style=for-the-badge&color=a855f7&label=PROFILE+VIEWS" alt="Profile Views" />
@@ -251,7 +251,7 @@ const abhishek = {
 
 <br/>
 
-<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Explore_All_Projects_%E2%86%92-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Explore_All_Projects_%E2%86%92-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
 
 </div>
 
@@ -296,7 +296,7 @@ const abhishek = {
 
 <div align="center">
 
-<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
+<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Old_Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/abhishek-tiwariiii"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
 <a href="https://github.com/Abhishek6827"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;
 <a href="mailto:abhishektiwari6827@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
