@@ -9,7 +9,7 @@
 <br/>
 
 <!-- Top Badges -->
-<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Old_Portfolio-Visit_Now-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>&nbsp;
+<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-Visit_Now-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/abhishek-tiwariiii"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
 <a href="mailto:abhishektiwari6827@gmail.com"><img src="https://img.shields.io/badge/Gmail-Hire_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;
 <img src="https://komarev.com/ghpvc/?username=Abhishek6827&style=for-the-badge&color=a855f7&label=PROFILE+VIEWS" alt="Profile Views" />
@@ -46,7 +46,7 @@ const abhishek = {
 </td>
 <td width="45%">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek6827&layout=donut-vertical&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&langs_count=6" width="100%" />
+<img src="https://github-readme-stats-7ihy.vercel.app/api/top-langs/?username=Abhishek6827&layout=donut-vertical&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&langs_count=6" width="100%" />
 
 </td>
 </tr>
@@ -251,7 +251,7 @@ const abhishek = {
 
 <br/>
 
-<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Explore_All_Projects_%E2%86%92-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Explore_All_Projects_%E2%86%92-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
 
 </div>
 
@@ -261,18 +261,18 @@ const abhishek = {
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Abhishek6827&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=c9d1d9&count_private=true&rank_icon=github" />
+<img width="49%" src="https://github-readme-stats-7ihy.vercel.app/api?username=Abhishek6827&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=c9d1d9&count_private=true&rank_icon=github" />
 <img width="49%" src="https://github-readme-streak-stats-eight.vercel.app?user=Abhishek6827&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=a855f7&currStreakLabel=a855f7" />
 
 <br/>
-
 <!-- GitHub Trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=Abhishek6827&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10" width="100%" />
+<img src="https://github-profile-trophy-orpin-alpha.vercel.app/?username=Abhishek6827&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&v=1" width="100%" />
 
 <br/>
 
 <!-- Activity Graph -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek6827&custom_title=Abhishek's+Contribution+Graph&bg_color=0d1117&color=a855f7&line=6366f1&point=a855f7&area_color=6366f1&area=true&hide_border=true" width="98%" />
+
 
 </div>
 
@@ -296,7 +296,7 @@ const abhishek = {
 
 <div align="center">
 
-<a href="https://abhishek6827.github.io/Old_Portfolio/"><img src="https://img.shields.io/badge/Old_Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
+<a href="https://abhishek6827.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/abhishek-tiwariiii"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;
 <a href="https://github.com/Abhishek6827"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;
 <a href="mailto:abhishektiwari6827@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
