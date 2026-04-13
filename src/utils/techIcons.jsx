@@ -21,11 +21,10 @@ import {
   SiExpress,
   SiPrisma,
   SiSocketdotio,
-  SiAssemblyai,
   SiWebrtc,
   SiFfmpeg,
 } from "react-icons/si";
-import { Code, Database, Sparkles, Video, Clock, Shield } from "lucide-react";
+import { Code, Database, Sparkles, Video, Clock, Shield, Zap } from "lucide-react";
 
 export const getTechIcon = (tech) => {
   const iconMap = {
@@ -54,7 +53,7 @@ export const getTechIcon = (tech) => {
     "Generative AI": <Sparkles className="text-yellow-400" />,
     "Socket.io": <SiSocketdotio className="text-white" />,
     WebRTC: <SiWebrtc className="text-green-400" />,
-    AssemblyAI: <SiAssemblyai className="text-blue-400" />,
+    AssemblyAI: <Zap className="text-blue-400" />,
     FFmpeg: <SiFfmpeg className="text-green-500" />,
     Tailwind: <SiTailwindcss className="text-cyan-400" />,
     NextAuth: <Shield className="text-purple-400" />,
