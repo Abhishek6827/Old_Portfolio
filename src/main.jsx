@@ -14,7 +14,7 @@ import Certifications from "./components/Certifications";
 import "./index.css";
 
 // Smooth Scroll Wrapper Component
-function SmoothScrollWrapper({ children }) {
+export function SmoothScrollWrapper({ children }) {
   useEffect(() => {
     // Initialize Lenis smooth scroll
     const lenis = new Lenis({

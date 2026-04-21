@@ -117,7 +117,7 @@ export default function About() {
                 }
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                👋 Hi there! I'm{" "}
+                👋 Hi there! I&apos;m{" "}
                 <span className="text-blue-400 font-semibold">
                   Abhishek Tiwari
                 </span>
@@ -151,7 +151,7 @@ export default function About() {
                 }
                 transition={{ duration: 0.6, delay: 0.7 }}
               >
-                💡 I'm experienced in API development and testing with{" "}
+                💡 I&apos;m experienced in API development and testing with{" "}
                 <span className="text-yellow-400">Postman</span>, webhook
                 implementations, Firebase hosting, real-time notifications via
                 Telegram, and seamless email integrations using Resend API. I
@@ -263,7 +263,7 @@ export default function About() {
                 }
                 transition={{ duration: 0.6, delay: 1.2 }}
               >
-                Let's Build Something Amazing Together!
+                Let&apos;s Build Something Amazing Together!
               </motion.h3>
               <motion.p
                 className="text-lg mb-6 text-white/90"
@@ -271,9 +271,9 @@ export default function About() {
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.8, delay: 1.4 }}
               >
-                I'm always excited to work on new projects and collaborate with
-                fellow developers. Whether it's a startup idea or an enterprise
-                solution, let's turn your vision into reality.
+                I&apos;m always excited to work on new projects and collaborate with
+                fellow developers. Whether it&apos;s a startup idea or an enterprise
+                solution, let&apos;s turn your vision into reality.
               </motion.p>
               <motion.div
                 className="flex justify-center flex-wrap gap-4"

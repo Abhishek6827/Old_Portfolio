@@ -13,7 +13,6 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
-  FileText,
 } from "lucide-react";
 import { FaLinkedin, FaReact, FaNodeJs } from "react-icons/fa";
 import {
@@ -134,7 +133,7 @@ function Hero() {
   // Generate stable random values for particles (memoized to prevent re-renders)
   const particlePositions = useMemo(
     () =>
-      Array.from({ length: 8 }, (_, i) => ({
+      Array.from({ length: 8 }, () => ({
         top: Math.random() * 100,
         xMovement: [(Math.random() - 0.5) * 50, (Math.random() - 0.5) * 50],
         duration: 2 + Math.random() * 2,
@@ -161,7 +160,7 @@ function Hero() {
     }, 100);
 
     return () => clearInterval(progressInterval);
-  }, [isAutoPlaying, featuredProjects.length]);
+  }, [isAutoPlaying]);
 
   // Cycle through images for the current project
   useEffect(() => {
@@ -193,12 +192,12 @@ function Hero() {
     const prevIndex =
       currentProject === 0 ? featuredProjects.length - 1 : currentProject - 1;
     handleProjectSelect(prevIndex);
-  }, [currentProject, featuredProjects.length, handleProjectSelect]);
+  }, [currentProject, handleProjectSelect]);
 
   const goToNext = useCallback(() => {
     const nextIndex = (currentProject + 1) % featuredProjects.length;
     handleProjectSelect(nextIndex);
-  }, [currentProject, featuredProjects.length, handleProjectSelect]);
+  }, [currentProject, handleProjectSelect]);
 
   // Keyboard navigation support
   useEffect(() => {

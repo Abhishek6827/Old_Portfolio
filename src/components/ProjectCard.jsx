@@ -10,7 +10,6 @@ const ProjectCard = React.forwardRef(
       images,
       backend,
       index,
-      onDemoClick,
       onHover,
       isFeatured = false,
     },

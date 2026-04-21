@@ -26,13 +26,13 @@ export default function Projects() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
   const dispatch = useDispatch();
-  const projects = useSelector(selectAllProjects);
+  const _projects = useSelector(selectAllProjects);
   const featuredProjects = useSelector(selectFeaturedProjects);
   const { status, error } = useSelector((state) => state.projects);
   const [selectedProject, setSelectedProject] = useState(null);
   const [demoError, setDemoError] = useState(null);
   const [filter, setFilter] = useState("all");
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [_hoveredProject, setHoveredProject] = useState(null);
 
   // Get filtered projects using the memoized selector
   const filteredProjects = useSelector((state) =>
@@ -55,7 +55,7 @@ export default function Projects() {
     "Game",
   ];
 
-  const handleDemoClick = (project) => {
+  const _handleDemoClick = (project) => {
     if (project.demo || project.deployedUrl) {
       setSelectedProject(project);
       setDemoError(null);
@@ -318,7 +318,6 @@ export default function Projects() {
                 images={getProjectImages(project.name)}
                 backend={getProjectBackend(project.name)}
                 index={index}
-                onDemoClick={() => handleDemoClick(project)}
                 onHover={setHoveredProject}
                 isFeatured={true}
               />
@@ -403,7 +402,6 @@ export default function Projects() {
                 images={getProjectImages(project.name)}
                 backend={getProjectBackend(project.name)}
                 index={index}
-                onDemoClick={() => handleDemoClick(project)}
                 onHover={setHoveredProject}
                 isFeatured={false}
               />

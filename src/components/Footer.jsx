@@ -152,9 +152,9 @@ export default function Footer() {
               Get In Touch
             </h3>
             <div className="space-y-3">
-              {contactInfo.map((info, index) => (
+              {contactInfo.map((info) => (
                 <motion.div
-                  key={index}
+                  key={info.text}
                   className="flex items-center space-x-3 text-gray-400"
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
@@ -192,7 +192,7 @@ export default function Footer() {
               Built With
             </h3>
             <div className="grid grid-cols-2 gap-3">
-              {techStack.map((tech, index) => (
+              {techStack.map((tech) => (
                 <motion.div
                   key={tech.name}
                   className={`flex items-center space-x-2 text-gray-400 ${tech.color} transition-colors duration-300 cursor-pointer`}

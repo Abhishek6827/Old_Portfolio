@@ -303,8 +303,8 @@ export default function DeploymentGuide() {
                   <li>• Go to your repository on GitHub</li>
                   <li>• Click on Settings tab</li>
                   <li>• Scroll down to Pages section</li>
-                  <li>• Select "Deploy from a branch"</li>
-                  <li>• Choose "main" branch and "/ (root)" folder</li>
+                  <li>• Select &quot;Deploy from a branch&quot;</li>
+                  <li>• Choose &quot;main&quot; branch and &quot;/ (root)&quot; folder</li>
                   <li>• Click Save</li>
                 </ul>
               </div>
@@ -394,7 +394,7 @@ export default function DeploymentGuide() {
                   </li>
                   <li>
                     <strong className="text-white">Blank Page:</strong> For
-                    React apps, ensure you're using HashRouter or configure
+                    React apps, ensure you&apos;re using HashRouter or configure
                     routing properly
                   </li>
                   <li>

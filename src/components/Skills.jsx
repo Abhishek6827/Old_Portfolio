@@ -199,7 +199,7 @@ export default function Skills() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             From building production-ready SaaS applications to integrating
-            payment gateways and real-time notifications - here's my
+            payment gateways and real-time notifications - here&apos;s my
             comprehensive tech stack.
           </motion.p>
         </motion.div>

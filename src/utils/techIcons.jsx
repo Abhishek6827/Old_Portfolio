@@ -24,7 +24,7 @@ import {
   SiWebrtc,
   SiFfmpeg,
 } from "react-icons/si";
-import { Code, Database, Sparkles, Video, Clock, Shield, Zap } from "lucide-react";
+import { Code, Database, Sparkles, Clock, Shield, Zap } from "lucide-react";
 
 export const getTechIcon = (tech) => {
   const iconMap = {

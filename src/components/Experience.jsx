@@ -1,13 +1,6 @@
 "use client";
 import { motion, useInView } from "framer-motion";
-import {
-  Briefcase,
-  Calendar,
-  TrendingUp,
-  Users,
-  Award,
-  Zap,
-} from "lucide-react";
+import { Briefcase, TrendingUp, Users, Award, Zap } from "lucide-react";
 import { useRef } from "react";
 
 export default function Experience() {
