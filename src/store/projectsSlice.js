@@ -21,7 +21,7 @@ export const fetchProjects = createAsyncThunk(
       Myntra: {
         description:
           "A fully responsive e-commerce fashion website clone with modern UI/UX, product catalog, shopping cart, and user authentication features.",
-        technologies: ["React", "Redux", "CSS", "JavaScript"],
+        technologies: ["React","Node.js", "Redux", "CSS", "JavaScript"],
         demo: "https://Abhishek6827.github.io/Myntra/",
         category: "E-commerce",
         featured: true,
@@ -37,7 +37,7 @@ export const fetchProjects = createAsyncThunk(
       Skill_Up: {
         description:
           "An educational platform for skill development with course listings, progress tracking, and interactive learning modules.",
-        technologies: ["React", "Bootstrap", "JavaScript"],
+        technologies: ["React", "Bootstrap", "JavaScript", "Tailwind CSS", "Firebase"],
         demo: "https://Abhishek6827.github.io/Skill_Up/",
         category: "Education",
         featured: true,
@@ -79,7 +79,7 @@ export const fetchProjects = createAsyncThunk(
       "E-commerce": {
         description:
           "A modern e-commerce platform with product listings, shopping cart, and user authentication.",
-        technologies: ["React", "JavaScript", "CSS", "HTML"],
+        technologies: ["React", "JavaScript", "Tailwind CSS", "HTML"],
         demo: "https://abhishek6827.github.io/E-commerce/",
         category: "E-commerce",
         featured: false,
