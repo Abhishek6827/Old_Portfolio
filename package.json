@@ -1,9 +1,9 @@
 {
-  "name": "Old_Portfolio",
+  "name": "old-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abhishek6827.github.io/Old_Portfolio/",
+  "homepage": "https://portfolio.getchintu.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

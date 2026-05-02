@@ -495,7 +495,7 @@ function Hero() {
                 </span>
               </motion.a>
               <motion.a
-                href="/Old_Portfolio/Resume.pdf"
+                href="/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative px-6 py-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-all duration-300 flex items-center space-x-2"
