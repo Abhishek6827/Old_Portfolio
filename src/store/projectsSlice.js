@@ -133,7 +133,7 @@ export const fetchProjects = createAsyncThunk(
           "Tailwind CSS",
           "Firebase",
         ],
-        demo: "https://tempusmail-backend--tempusmail6827.us-central1.hosted.app/",
+        demo: "https://tempomail.getchintu.com/",
         category: "Utility",
         featured: true,
       },

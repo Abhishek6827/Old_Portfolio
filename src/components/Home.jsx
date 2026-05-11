@@ -51,7 +51,7 @@ const featuredProjects = [
   {
     name: "Tempusmail",
     images: getProjectImages("Tempusmail"),
-    demo: "https://tempusmail-backend--tempusmail6827.us-central1.hosted.app/",
+    demo: "https://tempomail.getchintu.com/",
     tech: ["Next.js", "Firebase", "Notion Database", "Tailwind CSS"],
     description:
       "Temporary email service with real-time email receiving and modern UI",
