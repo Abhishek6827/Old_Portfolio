@@ -35,7 +35,7 @@ const featuredProjects = [
   {
     name: "Social Connect",
     images: getProjectImages("Social_Connect"),
-    demo: "https://social-media-lemon-six.vercel.app/login",
+    demo: "https://socialconnect.getchintu.com/",
     tech: ["Angular", "Node.js", "Express", "MongoDB", "Socket.io", "WebRTC"],
     description: "Real-time social platform with chat, video/audio calls, emoji reactions, and OAuth authentication.",
     color: "from-indigo-500 to-purple-600",
@@ -43,7 +43,7 @@ const featuredProjects = [
   {
     name: "Youtube Automation",
     images: getProjectImages("Youtube_Automation"),
-    demo: "https://yt-automation-beta.vercel.app/",
+    demo: "https://automation.getchintu.com/",
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Generative AI", "FFmpeg"],
     description: "AI-powered automated YouTube upload pipeline with Drive sync and copyright protection.",
     color: "from-red-500 to-rose-600",

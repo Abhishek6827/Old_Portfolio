@@ -141,7 +141,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "A full-stack real-time social platform with Socket.io-powered chat (text, image, audio, voice & file messages), WebRTC peer-to-peer video/audio calls, emoji reactions, message editing & deletion, read receipts, typing indicators, online/offline presence tracking, JWT + Google/Facebook OAuth via Passport.js, and user profiles with avatar & cover uploads.",
         technologies: ["Angular", "TypeScript", "Node.js", "Express", "MongoDB", "Socket.io", "WebRTC", "Passport.js", "Material UI"],
-        demo: "https://social-media-lemon-six.vercel.app/login",
+        demo: "https://socialconnect.getchintu.com/",
         category: "Social",
         featured: true,
       },
@@ -149,7 +149,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "An AI-powered automated YouTube upload pipeline: scans Google Drive folders, generates metadata via 3-tier AI system (AssemblyAI transcription → Gemini Vision frame analysis → filename fallback), uploads to YouTube with configurable scheduling, and includes copyright claim detection with auto-revert protection. Features multi-job cron automation and draft/preview workflows.",
         technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Generative AI", "AssemblyAI", "FFmpeg", "Tailwind CSS", "NextAuth"],
-        demo: "https://yt-automation-beta.vercel.app/",
+        demo: "https://automation.getchintu.com/",
         category: "Productivity",
         featured: true,
       },
