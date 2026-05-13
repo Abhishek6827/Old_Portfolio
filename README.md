@@ -129,7 +129,7 @@ const abhishek = {
 
 ## 🚀 Shipped & Deployed
 
-### 🟣 Social Connect — Full-Stack Real-Time Social Platform &nbsp; [**LIVE ↗**](https://social-media-lemon-six.vercel.app/login)
+### 🟣 Social Connect — Full-Stack Real-Time Social Platform &nbsp; [**LIVE ↗**](https://socialconnect.getchintu.com/)
 
 <img src="https://skillicons.dev/icons?i=angular,ts,express,nodejs,mongodb&perline=10" />
 
@@ -178,7 +178,7 @@ const abhishek = {
 
 ---
 
-### 🔴 YouTube Automation — AI-Powered Automated YouTube Upload Pipeline &nbsp; [**LIVE ↗**](https://yt-automation-beta.vercel.app/)
+### 🔴 YouTube Automation — AI-Powered Automated YouTube Upload Pipeline &nbsp; [**LIVE ↗**](https://automation.getchintu.com/)
 
 <img src="https://skillicons.dev/icons?i=nextjs,ts,prisma,postgres,tailwind&perline=10" />
 
