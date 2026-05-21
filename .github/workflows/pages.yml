@@ -48,3 +48,30 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5
+
+      - name: Send Telegram Notification
+        if: always()
+        run: |
+          STATUS="❌ FAILED"
+          if [ "${{ job.status }}" = "success" ]; then
+            STATUS="✅ SUCCESS"
+          fi
+
+          MESSAGE=$(cat <<EOF
+          🚀 *Old_Portfolio Deploy Alert*
+
+          *Project:* ${{ github.repository }}
+          *Status:* $STATUS
+          *Commit:* \`${{ github.sha }}\`
+          *Branch:* \`${{ github.ref_name }}\`
+
+          [View Portfolio](https://abhishek6827.github.io/Portfolio/)
+          [View Build Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          EOF
+          )
+
+          PAYLOAD=$(jq -n --arg chat_id "${{ secrets.TELEGRAM_CHAT_ID }}" --arg text "$MESSAGE" --arg parse_mode "Markdown" '{chat_id: $chat_id, text: $text, parse_mode: $parse_mode}')
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BUILD_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD"
