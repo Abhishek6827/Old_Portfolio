@@ -110,6 +110,8 @@ import YoutubeAutomationImage1 from "../images/Youtube_Automation/Image1.png";
 import CHINTUAIImage1 from "../images/CHINTU_AI/1.png";
 import CHINTUAIImage2 from "../images/CHINTU_AI/2.png";
 import CHINTUAIImage3 from "../images/CHINTU_AI/3.png";
+import CHINTUAIImage4 from "../images/CHINTU_AI/4.png";
+import CHINTUAIImage5 from "../images/CHINTU_AI/5.png";
 
 export const amazonImages = [AmazonImage1, AmazonImage2];
 export const CommerceImages = [Commerce1, Commerce2];
@@ -141,6 +143,8 @@ export const chintuAIImages = [
   CHINTUAIImage1,
   CHINTUAIImage2,
   CHINTUAIImage3,
+  CHINTUAIImage4,
+  CHINTUAIImage5,
 ];
 
 export const myntraImages = [
