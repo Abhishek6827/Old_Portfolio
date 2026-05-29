@@ -47,6 +47,7 @@ export default function Projects() {
 
   const categories = [
     "all",
+    "SaaS",
     "E-commerce",
     "Productivity",
     "Utility",

@@ -20,24 +20,24 @@ export const fetchProjects = createAsyncThunk(
     const projectDetails = {
       Myntra: {
         description:
-          "A fully responsive e-commerce fashion website clone with modern UI/UX, product catalog, shopping cart, and user authentication features.",
-        technologies: ["React","Node.js", "Redux", "CSS", "JavaScript"],
+          "A React 18 e-commerce fashion clone with Redux state management, Bootstrap UI, React Router navigation, and Express.js backend. Features product catalog with categories, persistent shopping cart, order summary with price calculation, and responsive design. Deployed on GitHub Pages with Render.com backend.",
+        technologies: ["React", "Redux", "Bootstrap", "React Router", "Express.js", "Node.js"],
         demo: "https://Abhishek6827.github.io/Myntra/",
         category: "E-commerce",
         featured: true,
       },
       Amazon: {
         description:
-          "A comprehensive Amazon-inspired e-commerce platform with product listings, search functionality, and responsive design.",
-        technologies: ["CSS", "HTML"],
+          "A static HTML/CSS clone of the Amazon homepage featuring product listings, search bar, and responsive layout.",
+        technologies: ["HTML", "CSS"],
         // demo: "https://Abhishek6827.github.io/Amazon/",
         category: "E-commerce",
         featured: false,
       },
       Skill_Up: {
         description:
-          "An educational platform for skill development with course listings, progress tracking, and interactive learning modules.",
-        technologies: ["React", "Bootstrap", "JavaScript", "Tailwind CSS", "Firebase"],
+          "A React + Firebase skill enhancement platform offering free video lessons, live sessions via Zoom/Webex, and skill-oriented blogs. Features dual-role registration (learner/volunteer), document verification for volunteers, admin dashboard, and email notifications via emailjs.",
+        technologies: ["React", "Firebase", "Bootstrap", "Tailwind CSS", "emailjs"],
         demo: "https://Abhishek6827.github.io/Skill_Up/",
         category: "Education",
         featured: true,
@@ -45,16 +45,16 @@ export const fetchProjects = createAsyncThunk(
 
       Calculator: {
         description:
-          "A modern calculator application with scientific functions, memory operations, and responsive design.",
-        technologies: ["JavaScript", "CSS", "HTML"],
+          "A React + Vite calculator application with scientific functions, memory operations, and responsive design.",
+        technologies: ["React", "Vite", "JavaScript", "CSS"],
         demo: "https://Abhishek6827.github.io/Calculator/",
         category: "Utility",
         featured: false,
       },
       Elante_Mall: {
         description:
-          "A shopping mall website with store directory, event listings, and interactive mall map functionality.",
-        technologies: ["React", "CSS", "JavaScript"],
+          "A multi-page static website for a shopping mall built with HTML, CSS, and JavaScript. Features store directory, events page, brand showcase, booking system, team section, testimonials, image carousel, and responsive design.",
+        technologies: ["HTML", "CSS", "JavaScript"],
         demo: "https://Abhishek6827.github.io/Elante_Mall/",
         category: "Business",
         featured: true,
@@ -86,23 +86,23 @@ export const fetchProjects = createAsyncThunk(
       },
       Currency_Converter: {
         description:
-          "A currency converter application with real-time exchange rates and intuitive interface.",
-        technologies: ["JavaScript", "CSS", "HTML", "API"],
+          "A vanilla JavaScript currency converter with real-time exchange rates via API, country flag display, and responsive design.",
+        technologies: ["JavaScript", "CSS", "HTML", "REST API"],
         demo: "https://abhishek6827.github.io/Currency_Converter/",
         category: "Utility",
         featured: false,
       },
       Password_Generator: {
         description:
-          "A secure password generator with customizable options for length and character types.",
-        technologies: ["JavaScript", "CSS", "HTML"],
+          "A React password generator with customizable length, character types (uppercase, lowercase, numbers, symbols), strength indicator, and one-click copy to clipboard.",
+        technologies: ["React", "JavaScript", "CSS"],
         demo: "https://abhishek6827.github.io/Password_Generator/",
         category: "Utility",
         featured: false,
       },
       RPS: {
         description:
-          "A Rock Paper Scissors game with interactive UI and score tracking.",
+          "An interactive Rock Paper Scissors game with animated hand gestures, score tracking, win/loss/draw logic, and responsive design.",
         technologies: ["JavaScript", "CSS", "HTML"],
         demo: "https://abhishek6827.github.io/RPS/",
         category: "Game",
@@ -110,7 +110,7 @@ export const fetchProjects = createAsyncThunk(
       },
       "Tic-Tac-Toe": {
         description:
-          "A Tic Tac Toe game with multiplayer functionality and win detection.",
+          "An interactive Tic-Tac-Toe game with turn tracking, win detection, draw detection, scoreboard, and responsive design.",
         technologies: ["JavaScript", "CSS", "HTML"],
         demo: "https://abhishek6827.github.io/Tic-Tac-Toe/",
         category: "Game",
@@ -118,8 +118,8 @@ export const fetchProjects = createAsyncThunk(
       },
       "Bharat-Clock": {
         description:
-          "A beautiful digital clock application showing Indian time zones with elegant design and smooth animations.",
-        technologies: ["JavaScript", "CSS", "HTML"],
+          "A React + Vite digital clock application displaying Indian time zones with elegant design, smooth animations, and responsive layout.",
+        technologies: ["React", "Vite", "JavaScript", "CSS"],
         demo: "https://Abhishek6827.github.io/Bharat-Clock/",
         category: "Utility",
         featured: false,
@@ -151,6 +151,14 @@ export const fetchProjects = createAsyncThunk(
         technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Generative AI", "AssemblyAI", "FFmpeg", "Tailwind CSS", "NextAuth"],
         demo: "https://automation.getchintu.com/",
         category: "Productivity",
+        featured: true,
+      },
+      CHINTU_AI: {
+        description:
+          "A full-stack AI-Powered Career Preparation Platform: real-time AI answers under 200ms with multi-LLM routing (Groq, OpenRouter, DashScope), interactive mock interview simulator with scoring, AI resume tailoring to match job descriptions, credit-based usage with Stripe billing, Clerk auth, and Supabase data layer. Cross-platform via Electron desktop app with stealth overlay and 63+ language transcription.",
+        technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "Clerk", "Stripe", "Electron", "Tailwind CSS", "Framer Motion"],
+        demo: "https://www.getchintu.com/",
+        category: "SaaS",
         featured: true,
       },
     };
@@ -216,7 +224,7 @@ export const fetchProjects = createAsyncThunk(
     });
 
     // Add manual fallback projects if not in GitHub repos
-    const customProjects = ["Tempusmail", "Youtube_Automation", "Social_Connect"];
+    const customProjects = ["CHINTU_AI", "Tempusmail", "Youtube_Automation", "Social_Connect"];
     
     customProjects.forEach((customName) => {
       if (!availableRepos.includes(customName)) {

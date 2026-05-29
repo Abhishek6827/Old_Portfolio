@@ -33,6 +33,14 @@ import { getTechIcon } from "../utils/techIcons";
 
 const featuredProjects = [
   {
+    name: "CHINTU AI",
+    images: getProjectImages("CHINTU_AI"),
+    demo: "https://www.getchintu.com/",
+    tech: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "Clerk", "Stripe", "Electron"],
+    description: "AI-powered interview copilot SaaS with real-time multi-LLM routing, mock interviews, resume tailoring, and cross-platform Electron app.",
+    color: "from-cyan-500 to-blue-600",
+  },
+  {
     name: "Social Connect",
     images: getProjectImages("Social_Connect"),
     demo: "https://socialconnect.getchintu.com/",

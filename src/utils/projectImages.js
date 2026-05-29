@@ -106,6 +106,11 @@ import SocialConnectImage4 from "../images/Social_Connect/Image4.png";
 // Youtube Automation Images
 import YoutubeAutomationImage1 from "../images/Youtube_Automation/Image1.png";
 
+// CHINTU AI Images
+import CHINTUAIImage1 from "../images/CHINTU_AI/1.png";
+import CHINTUAIImage2 from "../images/CHINTU_AI/2.png";
+import CHINTUAIImage3 from "../images/CHINTU_AI/3.png";
+
 export const amazonImages = [AmazonImage1, AmazonImage2];
 export const CommerceImages = [Commerce1, Commerce2];
 export const currencyConverterImages = [CurrencyConverterImage1];
@@ -131,6 +136,12 @@ export const socialConnectImages = [
 ];
 
 export const youtubeAutomationImages = [YoutubeAutomationImage1];
+
+export const chintuAIImages = [
+  CHINTUAIImage1,
+  CHINTUAIImage2,
+  CHINTUAIImage3,
+];
 
 export const myntraImages = [
   MyntraImage1,
@@ -239,6 +250,8 @@ export const getProjectImages = (projectName) => {
     Social_Connect: socialConnectImages,
     "Youtube Automation": youtubeAutomationImages,
     Youtube_Automation: youtubeAutomationImages,
+    "CHINTU AI": chintuAIImages,
+    CHINTU_AI: chintuAIImages,
   };
   return imageMap[projectName] || null;
 };
