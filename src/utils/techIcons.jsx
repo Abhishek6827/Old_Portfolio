@@ -7,6 +7,7 @@ import {
   FaNodeJs,
   FaPython,
   FaAngular,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -23,6 +24,7 @@ import {
   SiSocketdotio,
   SiWebrtc,
   SiFfmpeg,
+  SiSpringboot,
 } from "react-icons/si";
 import { Code, Database, Sparkles, Clock, Shield, Zap } from "lucide-react";
 
@@ -60,6 +62,8 @@ export const getTechIcon = (tech) => {
     "node-cron": <Clock className="text-orange-400" />,
     "Material UI": <Code className="text-blue-300" />,
     "Passport.js": <Shield className="text-green-400" />,
+    Java: <FaJava className="text-red-500" />,
+    "Spring Boot": <SiSpringboot className="text-green-500" />,
   };
   return iconMap[tech] || <Code className="text-gray-400" />;
 };
