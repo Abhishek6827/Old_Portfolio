@@ -26,6 +26,14 @@ export const fetchProjects = createAsyncThunk(
         category: "E-commerce",
         featured: true,
       },
+      "Resume-Extension": {
+        description:
+          "An AI-powered web application that instantly parses resumes and job descriptions to generate highly tailored ATS-friendly resumes. Features a robust Spring Boot Java backend with PDF extraction (Apache PDFBox) and Groq LLM integration, while the frontend is built with React and Tailwind CSS.",
+        technologies: ["Java", "Spring Boot", "PDFBox", "Groq AI", "React", "Tailwind CSS"],
+        demo: "https://github.com/Abhishek6827/Resume-Extension",
+        category: "Productivity",
+        featured: true,
+      },
       Amazon: {
         description:
           "A static HTML/CSS clone of the Amazon homepage featuring product listings, search bar, and responsive layout.",
@@ -168,6 +176,7 @@ export const fetchProjects = createAsyncThunk(
 
     // Make sure these names match exactly with your GitHub repo names
     const projectsToKeep = [
+      "Resume-Extension",
       "Social_Connect",
       "Youtube_Automation",
       "Tempusmail",

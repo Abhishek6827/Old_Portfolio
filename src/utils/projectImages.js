@@ -12,6 +12,12 @@ import MyntraImage4 from "../images/Myntra/image4.png";
 import MyntraImage5 from "../images/Myntra/image5.png";
 import MyntraImage6 from "../images/Myntra/image6.png";
 
+// Resume Extension Images
+import ResumeExtensionImage1 from "../images/Resume-Extension/image1.png";
+import ResumeExtensionImage2 from "../images/Resume-Extension/image2.png";
+import ResumeExtensionImage3 from "../images/Resume-Extension/image3.png";
+import ResumeExtensionImage4 from "../images/Resume-Extension/image4.png";
+
 // Elante Mall Images
 import ElanteImage1 from "../images/Elante_Mall/Image1.png";
 import ElanteImage2 from "../images/Elante_Mall/Image2.png";
@@ -156,6 +162,13 @@ export const myntraImages = [
   MyntraImage6,
 ];
 
+export const resumeExtensionImages = [
+  ResumeExtensionImage1,
+  ResumeExtensionImage2,
+  ResumeExtensionImage3,
+  ResumeExtensionImage4,
+];
+
 export const elanteImages = [
   ElanteImage1,
   ElanteImage2,
@@ -256,6 +269,7 @@ export const getProjectImages = (projectName) => {
     Youtube_Automation: youtubeAutomationImages,
     "CHINTU AI": chintuAIImages,
     CHINTU_AI: chintuAIImages,
+    "Resume-Extension": resumeExtensionImages,
   };
   return imageMap[projectName] || null;
 };

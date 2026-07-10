@@ -32,6 +32,7 @@ import { getTechIcon } from "../utils/techIcons";
 // Update the featuredProjects array to use your local images:
 
 const featuredProjects = [
+
   {
     name: "CHINTU AI",
     images: getProjectImages("CHINTU_AI"),
@@ -47,6 +48,14 @@ const featuredProjects = [
     tech: ["Angular", "Node.js", "Express", "MongoDB", "Socket.io", "WebRTC"],
     description: "Real-time social platform with chat, video/audio calls, emoji reactions, and OAuth authentication.",
     color: "from-indigo-500 to-purple-600",
+  },
+  {
+    name: "Resume-Extension",
+    images: getProjectImages("Resume-Extension"),
+    demo: "https://github.com/Abhishek6827/Resume-Extension",
+    tech: ["Java", "Spring Boot", "React", "Tailwind CSS"],
+    description: "AI-powered browser extension & web app that instantly parses resumes and generates tailored ATS-friendly resumes using Groq LLM.",
+    color: "from-green-500 to-emerald-600",
   },
   {
     name: "Youtube Automation",
@@ -541,11 +550,10 @@ function Hero() {
                       <button
                         key={index}
                         onClick={() => handleProjectSelect(index)}
-                        className={`relative w-2 h-2 rounded-full transition-all duration-300 ${
-                          index === currentProject
+                        className={`relative w-2 h-2 rounded-full transition-all duration-300 ${index === currentProject
                             ? "bg-blue-400 w-6"
                             : "bg-gray-600 hover:bg-gray-500"
-                        }`}
+                          }`}
                       >
                         {index === currentProject && isAutoPlaying && (
                           <div
@@ -558,11 +566,10 @@ function Hero() {
                   </div>
                   <button
                     onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                    className={`text-xs px-2 py-1 rounded transition-colors ${
-                      isAutoPlaying
+                    className={`text-xs px-2 py-1 rounded transition-colors ${isAutoPlaying
                         ? "bg-blue-500 text-white"
                         : "bg-gray-600 text-gray-300"
-                    }`}
+                      }`}
                     title={isAutoPlaying ? "Pause auto-play" : "Play auto-play"}
                   >
                     {isAutoPlaying ? "⏸" : "▶"}
