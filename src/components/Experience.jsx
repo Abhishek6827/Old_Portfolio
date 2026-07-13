@@ -10,6 +10,18 @@ export default function Experience() {
   const experiences = [
     {
       title: "Full Stack Developer",
+      company: "CHINTU AI",
+      period: "02/2026 - Present",
+      responsibilities: [
+        "Designed and shipped a full-stack AI-powered interview preparation and career coaching platform using Next.js, TypeScript, Node.js, and PostgreSQL.",
+        "Architected an intelligent AI tutoring engine integrating multiple LLM providers (Groq, OpenRouter, DashScope) for personalized mock interviews and resume feedback.",
+        "Built interactive modules including dynamic mock interview generation, AI-powered resume tailoring, and personalized career coaching using streaming APIs.",
+        "Implemented a subscription-based SaaS monetization model with Clerk authentication, Supabase data layer, and Stripe billing with webhook automation.",
+      ],
+      technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Groq", "OpenRouter", "DashScope", "Stripe", "Clerk", "Supabase"],
+    },
+    {
+      title: "Full Stack Developer",
       company: "Indian Capital and Investment (Coimbatore) Limited",
       period: "11/2025 - 03/2026",
       responsibilities: [
