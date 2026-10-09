@@ -37,8 +37,8 @@ const featuredProjects = [
     name: "CHINTU AI",
     images: getProjectImages("CHINTU_AI"),
     demo: "https://www.getchintu.com/",
-    tech: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "Clerk", "Stripe", "Electron"],
-    description: "AI-powered interview copilot SaaS with real-time multi-LLM routing, mock interviews, resume tailoring, and cross-platform Electron app.",
+    tech: ["React", "Electron", "Android", "FastAPI", "Node.js", "PostgreSQL", "RabbitMQ", "Razorpay", "Groq", "Gemini"],
+    description: "Full-stack AI career preparation SaaS with multi-platform clients (Web, Windows .exe, macOS .dmg, Android .apk), multi-LLM routing, automated resume tailoring, and dynamic skill assessments.",
     color: "from-cyan-500 to-blue-600",
   },
   {

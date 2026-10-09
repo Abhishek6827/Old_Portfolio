@@ -163,8 +163,8 @@ export const fetchProjects = createAsyncThunk(
       },
       CHINTU_AI: {
         description:
-          "A full-stack AI-Powered Career Preparation Platform: real-time AI answers under 200ms with multi-LLM routing (Groq, OpenRouter, DashScope), interactive mock interview simulator with scoring, AI resume tailoring to match job descriptions, credit-based usage with Stripe billing, Clerk auth, and Supabase data layer. Cross-platform via Electron desktop app with stealth overlay and 63+ language transcription.",
-        technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "Clerk", "Stripe", "Electron", "Tailwind CSS", "Framer Motion"],
+          "A full-stack career preparation SaaS and multi-platform client ecosystem across Web, Desktop (Windows .exe & macOS .dmg via Electron), and Android (.apk). Features an automated resume tailoring engine compiling ATS-compliant PDFs, multi-LLM routing (Groq, Gemini, OpenRouter) with automatic fallback (<400ms routing latency, 99.8% uptime), RabbitMQ-powered audio transcription across 63 languages, dynamic skill assessments, and Razorpay credit billing with webhook-driven entitlement syncing.",
+        technologies: ["React", "Electron", "Android", "FastAPI", "Node.js", "PostgreSQL", "RabbitMQ", "Razorpay", "Groq", "Gemini", "Tailwind CSS"],
         demo: "https://www.getchintu.com/",
         category: "SaaS",
         featured: true,
