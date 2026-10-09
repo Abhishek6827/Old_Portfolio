@@ -270,6 +270,8 @@ export const getProjectImages = (projectName) => {
     "CHINTU AI": chintuAIImages,
     CHINTU_AI: chintuAIImages,
     "Resume-Extension": resumeExtensionImages,
+    "Resume Extension": resumeExtensionImages,
+    Resume_Extension: resumeExtensionImages,
   };
   return imageMap[projectName] || null;
 };

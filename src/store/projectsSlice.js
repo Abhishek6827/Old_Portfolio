@@ -233,7 +233,7 @@ export const fetchProjects = createAsyncThunk(
     });
 
     // Add manual fallback projects if not in GitHub repos
-    const customProjects = ["Social_Connect", "Youtube_Automation", "Tempusmail", "CHINTU_AI"];
+    const customProjects = ["Resume-Extension", "Social_Connect", "Youtube_Automation", "Tempusmail", "CHINTU_AI"];
     
     customProjects.forEach((customName) => {
       if (!availableRepos.includes(customName)) {

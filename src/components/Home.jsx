@@ -53,8 +53,8 @@ const featuredProjects = [
     name: "Resume-Extension",
     images: getProjectImages("Resume-Extension"),
     demo: "https://github.com/Abhishek6827/Resume-Extension",
-    tech: ["Java", "Spring Boot", "React", "Tailwind CSS"],
-    description: "AI-powered browser extension & web app that instantly parses resumes and generates tailored ATS-friendly resumes using Groq LLM.",
+    tech: ["Next.js", "React", "TypeScript", "Spring Boot", "Java", "Groq", "NVIDIA", "LaTeX", "Tailwind CSS"],
+    description: "AI resume tailoring platform & Chrome extension that aligns experience bullets with job descriptions and compiles ATS-compliant 1-page LaTeX PDFs via multi-LLM fallback routing.",
     color: "from-green-500 to-emerald-600",
   },
   {
@@ -66,8 +66,8 @@ const featuredProjects = [
     color: "from-red-500 to-rose-600",
   },
   {
-    name: "Tempusmail",
-    images: getProjectImages("Tempusmail"),
+    name: "Tempomail",
+    images: getProjectImages("Tempomail"),
     demo: "https://tempomail.getchintu.com/",
     tech: ["Next.js", "Firebase", "Notion Database", "Tailwind CSS"],
     description:
@@ -551,8 +551,8 @@ function Hero() {
                         key={index}
                         onClick={() => handleProjectSelect(index)}
                         className={`relative w-2 h-2 rounded-full transition-all duration-300 ${index === currentProject
-                            ? "bg-blue-400 w-6"
-                            : "bg-gray-600 hover:bg-gray-500"
+                          ? "bg-blue-400 w-6"
+                          : "bg-gray-600 hover:bg-gray-500"
                           }`}
                       >
                         {index === currentProject && isAutoPlaying && (
@@ -567,8 +567,8 @@ function Hero() {
                   <button
                     onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                     className={`text-xs px-2 py-1 rounded transition-colors ${isAutoPlaying
-                        ? "bg-blue-500 text-white"
-                        : "bg-gray-600 text-gray-300"
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-600 text-gray-300"
                       }`}
                     title={isAutoPlaying ? "Pause auto-play" : "Play auto-play"}
                   >
