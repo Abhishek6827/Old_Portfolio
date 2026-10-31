@@ -119,6 +119,21 @@ import CHINTUAIImage3 from "../images/CHINTU_AI/3.png";
 import CHINTUAIImage4 from "../images/CHINTU_AI/4.png";
 import CHINTUAIImage5 from "../images/CHINTU_AI/5.png";
 
+// Jedis Images
+import JedisImage1 from "../images/Jedis/1.png";
+import JedisImage2 from "../images/Jedis/2.png";
+import JedisImage3 from "../images/Jedis/3.png";
+
+// AegisDB Images
+import AegisDBImage1 from "../images/AegisDB/1.png";
+import AegisDBImage2 from "../images/AegisDB/2.png";
+import AegisDBImage3 from "../images/AegisDB/3.png";
+
+// SynapseAI Images
+import SynapseAIImage1 from "../images/SynapseAI/1.png";
+import SynapseAIImage2 from "../images/SynapseAI/2.png";
+import SynapseAIImage3 from "../images/SynapseAI/3.png";
+
 export const amazonImages = [AmazonImage1, AmazonImage2];
 export const CommerceImages = [Commerce1, Commerce2];
 export const currencyConverterImages = [CurrencyConverterImage1];
@@ -151,6 +166,24 @@ export const chintuAIImages = [
   CHINTUAIImage3,
   CHINTUAIImage4,
   CHINTUAIImage5,
+];
+
+export const jedisImages = [
+  JedisImage1,
+  JedisImage2,
+  JedisImage3,
+];
+
+export const aegisDBImages = [
+  AegisDBImage1,
+  AegisDBImage2,
+  AegisDBImage3,
+];
+
+export const synapseAIImages = [
+  SynapseAIImage1,
+  SynapseAIImage2,
+  SynapseAIImage3,
 ];
 
 export const myntraImages = [
@@ -269,6 +302,13 @@ export const getProjectImages = (projectName) => {
     Youtube_Automation: youtubeAutomationImages,
     "CHINTU AI": chintuAIImages,
     CHINTU_AI: chintuAIImages,
+    Jedis: jedisImages,
+    "Jedis": jedisImages,
+    AegisDB: aegisDBImages,
+    "AegisDB": aegisDBImages,
+    SynapseAI: synapseAIImages,
+    "SynapseAI": synapseAIImages,
+    "Synapse AI": synapseAIImages,
     "Resume-Extension": resumeExtensionImages,
     "Resume Extension": resumeExtensionImages,
     Resume_Extension: resumeExtensionImages,

@@ -169,6 +169,30 @@ export const fetchProjects = createAsyncThunk(
         category: "SaaS",
         featured: true,
       },
+      Jedis: {
+        description:
+          "A high-performance in-memory Redis server clone built from scratch in Java 23 and Spring Framework. Features full implementation of the RESP wire protocol, multi-threaded TCP socket connection handling, thread-safe storage with TTL auto-expiration, ACID transactions with optimistic locking (MULTI/EXEC/WATCH), and distributed Master-Slave replication with PSYNC/WAIT command propagation.",
+        technologies: ["Java", "Spring Boot", "TCP Sockets", "RESP Protocol", "Replication", "Docker", "Kubernetes"],
+        demo: "https://github.com/Abhishek6827/Jedis",
+        category: "Systems / Backend",
+        featured: true,
+      },
+      AegisDB: {
+        description:
+          "A lightweight, high-performance embedded database storage engine written from scratch in Java 21. Implements custom B+Tree indexing for unique and clustered records, compressed bitmap indexing for low-cardinality queries, binary model serialization, a 4KB disk page buffer pool with LRU eviction, and collection-level Reader-Writer Lock concurrency.",
+        technologies: ["Java", "B+Tree", "Bitmap Index", "Storage Engine", "LRU Cache", "Disk Paging"],
+        demo: "https://github.com/Abhishek6827/AegisDB",
+        category: "Database / Systems",
+        featured: true,
+      },
+      SynapseAI: {
+        description:
+          "A production-grade long-term memory engine and cognitive architecture for autonomous AI agents. Features a Two-Phase Memory Pipeline that extracts salient user facts, automatically resolves contradictions against stored knowledge, and integrates with Qdrant Vector DB for sub-150ms semantic memory retrieval with 90% token savings.",
+        technologies: ["Python", "Qdrant", "OpenAI", "Mem0", "Vector Search", "Docker"],
+        demo: "https://github.com/Abhishek6827/SynapseAI",
+        category: "AI / Machine Learning",
+        featured: true,
+      },
     };
 
     const availableRepos = data.map((repo) => repo.name);
@@ -176,6 +200,9 @@ export const fetchProjects = createAsyncThunk(
 
     // Make sure these names match exactly with your GitHub repo names
     const projectsToKeep = [
+      "SynapseAI",
+      "AegisDB",
+      "Jedis",
       "Resume-Extension",
       "Social_Connect",
       "Youtube_Automation",
@@ -233,7 +260,7 @@ export const fetchProjects = createAsyncThunk(
     });
 
     // Add manual fallback projects if not in GitHub repos
-    const customProjects = ["Resume-Extension", "Social_Connect", "Youtube_Automation", "Tempusmail", "CHINTU_AI"];
+    const customProjects = ["SynapseAI", "AegisDB", "Jedis", "Resume-Extension", "Social_Connect", "Youtube_Automation", "Tempusmail", "CHINTU_AI"];
     
     customProjects.forEach((customName) => {
       if (!availableRepos.includes(customName)) {
@@ -252,7 +279,7 @@ export const fetchProjects = createAsyncThunk(
             updated_at: new Date().toISOString(),
             deployStatus: "idle",
             deployedUrl: customDetails.demo,
-            html_url: null, // No GitHub repo
+            html_url: customDetails.demo?.includes("github.com") ? customDetails.demo : null,
           });
         }
       }
