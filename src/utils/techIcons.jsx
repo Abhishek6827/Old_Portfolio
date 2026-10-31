@@ -109,7 +109,11 @@ export const getTechIcon = (tech) => {
     "Cohen's Kappa": <Scale size={15} className="text-yellow-400" />,
     "Bias Mitigation": <Sliders size={15} className="text-emerald-400" />,
     "JSON Schema": <FileCode2 size={15} className="text-amber-400" />,
-    "Groq LLaMA 3.3": <Cpu size={15} className="text-orange-500" />,
+    "Groq GPT-OSS 120B": <Cpu size={15} className="text-orange-500" />,
+    "GPT-OSS 120B": <Cpu size={15} className="text-orange-500" />,
+    "Groq": <Cpu size={15} className="text-orange-500" />,
+    "Qwen 3.8": <Sparkles size={15} className="text-sky-400" />,
+    "Qwen 2.5": <Sparkles size={15} className="text-sky-400" />,
     "Cognitive Architecture": <Brain size={15} className="text-violet-400" />,
 
     // Vector Search, Caching & ML

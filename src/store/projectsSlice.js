@@ -45,8 +45,8 @@ const projectDetails = {
     badge: "Cognitive Architecture & Agent Memory",
     metrics: "90% Prompt Token Savings • Sub-45ms Direct Index Lookup • Automated Contradiction Resolution",
     description:
-      "A dual-phase persistent long-term memory engine for autonomous AI agents that eliminates context-window stuffing. Implements selective fact extraction and automated contradiction resolution (ADD / UPDATE / DELETE). Powered by Groq LLaMA 3.3 for structured extraction and Qdrant vector database for sub-45ms semantic memory retrieval.",
-    technologies: ["Python", "FastAPI", "Groq LLaMA 3.3", "Qdrant", "Vector Search", "Cognitive Architecture"],
+      "A dual-phase persistent long-term memory engine for autonomous AI agents that eliminates context-window stuffing. Implements selective fact extraction and automated contradiction resolution (ADD / UPDATE / DELETE). Powered by Groq GPT-OSS 120B for structured extraction and Qdrant vector database for sub-45ms semantic memory retrieval.",
+    technologies: ["Python", "FastAPI", "Groq GPT-OSS 120B", "Qdrant", "Vector Search", "Cognitive Architecture"],
     demo: "",
     category: "AI Security & Evals",
     featured: true,
