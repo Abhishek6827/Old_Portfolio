@@ -14,7 +14,7 @@ const projectDetails = {
     description:
       "An empirical security audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Reduced breach rate from 10/10 to 0/10 with 0 false blocks on clean corporate queries and 1.8ms latency overhead.",
     technologies: ["Python", "OWASP LLM01", "RAG", "ChromaDB", "Pytest", "Regex Guardrails"],
-    demo: "https://rag-prompt-injection-audit.vercel.app",
+    demo: "",
     category: "AI Security & Evals",
     featured: true,
   },
@@ -25,7 +25,7 @@ const projectDetails = {
     description:
       "An empirical evaluation framework auditing position bias, verbosity/length padding bias, and self-preference in LLM evaluators. Implements a bidirectional swap consensus protocol and length-invariant scoring constraints that eliminated position-dependent verdict flips and raised human agreement to 93.3% with statistical Cohen's Kappa measurement.",
     technologies: ["Python", "LLM Evals", "Cohen's Kappa", "Bias Mitigation", "Pytest", "JSON Schema"],
-    demo: "https://llm-judge-audit.vercel.app",
+    demo: "",
     category: "AI Security & Evals",
     featured: true,
   },
@@ -36,7 +36,7 @@ const projectDetails = {
     description:
       "A high-performance semantic vector caching engine for enterprise FAQ support bots. Implements multilingual sentence embeddings (MiniLM-L12-v2), automated cosine threshold sweeps (0.75-0.95), Hindi/English lexical negation conflict guards, and automated PII scrubbing (phone, email, order IDs) with TTL cache hygiene.",
     technologies: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest", "FastAPI"],
-    demo: "https://semantic-cache-faq.vercel.app",
+    demo: "",
     category: "Core Systems & DB",
     featured: true,
   },
@@ -47,7 +47,7 @@ const projectDetails = {
     description:
       "A dual-phase persistent long-term memory engine for autonomous AI agents that eliminates context-window stuffing. Implements selective fact extraction and automated contradiction resolution (ADD / UPDATE / DELETE). Powered by Groq LLaMA 3.3 for structured extraction and Qdrant vector database for sub-45ms semantic memory retrieval.",
     technologies: ["Python", "FastAPI", "Groq LLaMA 3.3", "Qdrant", "Vector Search", "Cognitive Architecture"],
-    demo: "https://synapse-ai-xi-black.vercel.app",
+    demo: "",
     category: "AI Security & Evals",
     featured: true,
   },
@@ -58,7 +58,7 @@ const projectDetails = {
     description:
       "A custom in-memory key-value store and raw TCP socket server built in Java 23. Features a non-blocking event-driven network architecture, custom byte-level RESP 2/3 serialization, multi-threaded command dispatch, optimistic locking with concurrent storage, distributed Master-Slave replication streams, and millisecond TTL expiration.",
     technologies: ["Java 23", "Raw TCP Sockets", "RESP Protocol", "Concurrency", "Replication", "In-Memory Engine"],
-    demo: "https://jedis-redis.vercel.app",
+    demo: "",
     category: "Core Systems & DB",
     featured: true,
   },
@@ -69,7 +69,7 @@ const projectDetails = {
     description:
       "A custom embedded disk-backed database engine built in Java 21. Implements clustered B+Tree indexing for primary keys, compressed bitmap indexing for low-cardinality queries, 4KB slotted disk page buffer pool with LRU cache eviction and dirty-page flushes, and collection-level Reader-Writer locks for ACID concurrency.",
     technologies: ["Java 21", "B+Tree", "4KB Buffer Pool", "Bitmap Indexing", "Disk Paging", "ACID Concurrency"],
-    demo: "https://aegis-db.vercel.app",
+    demo: "",
     category: "Core Systems & DB",
     featured: true,
   },
