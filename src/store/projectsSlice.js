@@ -18,6 +18,30 @@ export const fetchProjects = createAsyncThunk(
     const data = await response.json();
 
     const projectDetails = {
+      "rag-prompt-injection-audit": {
+        description:
+          "An empirical security audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Reduced breach rate from 10/10 to 0/10 with 0 false blocks on clean corporate queries and 1.8ms latency overhead (98% test coverage).",
+        technologies: ["Python", "OWASP LLM01", "RAG", "Security Auditing", "Pytest", "Regex Guardrails"],
+        demo: "https://github.com/Abhishek6827/rag-prompt-injection-audit",
+        category: "AI Security / Systems",
+        featured: true,
+      },
+      "llm-judge-audit": {
+        description:
+          "An empirical bias audit measuring position bias, verbosity bias (+150 filler words), and self-preference in LLM-as-a-Judge pipelines. Implements bidirectional consensus calibration that boosted human agreement from 26/30 to 28/30 with Cohen's Kappa measurement (93% test coverage).",
+        technologies: ["Python", "LLM Evals", "Cohen's Kappa", "Bias Mitigation", "Pytest", "JSON Schema"],
+        demo: "https://github.com/Abhishek6827/llm-judge-audit",
+        category: "AI Evaluation & Alignment",
+        featured: true,
+      },
+      "semantic-cache-faq": {
+        description:
+          "A high-performance semantic caching system for LLM FAQ bots that cuts LLM calls by 67% and reduces latency from 420ms to 1.2ms (350x speedup). Features automated cosine similarity threshold sweeps (0.75-0.95), Hindi/English lexical negation guard, and TTL/PII cache hygiene (84% test coverage).",
+        technologies: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest"],
+        demo: "https://github.com/Abhishek6827/semantic-cache-faq",
+        category: "Systems / Performance",
+        featured: true,
+      },
       Myntra: {
         description:
           "A React 18 e-commerce fashion clone with Redux state management, Bootstrap UI, React Router navigation, and Express.js backend. Features product catalog with categories, persistent shopping cart, order summary with price calculation, and responsive design. Deployed on GitHub Pages with Render.com backend.",
@@ -200,9 +224,13 @@ export const fetchProjects = createAsyncThunk(
 
     // Make sure these names match exactly with your GitHub repo names
     const projectsToKeep = [
+      "rag-prompt-injection-audit",
+      "llm-judge-audit",
+      "semantic-cache-faq",
       "SynapseAI",
-      "AegisDB",
       "Jedis",
+      "AegisDB",
+      "CHINTU_AI",
       "Resume-Extension",
       "Social_Connect",
       "Youtube_Automation",
@@ -259,8 +287,20 @@ export const fetchProjects = createAsyncThunk(
       };
     });
 
-    // Add manual fallback projects if not in GitHub repos
-    const customProjects = ["SynapseAI", "AegisDB", "Jedis", "Resume-Extension", "Social_Connect", "Youtube_Automation", "Tempusmail", "CHINTU_AI"];
+    // Add manual fallback projects in exact reverse priority order so unshifting keeps #1 at the top
+    const customProjects = [
+      "Tempusmail",
+      "Youtube_Automation",
+      "Social_Connect",
+      "Resume-Extension",
+      "CHINTU_AI",
+      "AegisDB",
+      "Jedis",
+      "SynapseAI",
+      "semantic-cache-faq",
+      "llm-judge-audit",
+      "rag-prompt-injection-audit",
+    ];
     
     customProjects.forEach((customName) => {
       if (!availableRepos.includes(customName)) {

@@ -134,6 +134,21 @@ import SynapseAIImage1 from "../images/SynapseAI/1.png";
 import SynapseAIImage2 from "../images/SynapseAI/2.png";
 import SynapseAIImage3 from "../images/SynapseAI/3.png";
 
+// RAG Prompt Injection Audit Images
+import RagAuditImage1 from "../images/rag-prompt-injection-audit/1.png";
+import RagAuditImage2 from "../images/rag-prompt-injection-audit/2.png";
+import RagAuditImage3 from "../images/rag-prompt-injection-audit/3.png";
+
+// LLM Judge Bias Audit Images
+import LLMJudgeImage1 from "../images/llm-judge-audit/1.png";
+import LLMJudgeImage2 from "../images/llm-judge-audit/2.png";
+import LLMJudgeImage3 from "../images/llm-judge-audit/3.png";
+
+// Semantic Cache FAQ Images
+import SemanticCacheImage1 from "../images/semantic-cache-faq/1.png";
+import SemanticCacheImage2 from "../images/semantic-cache-faq/2.png";
+import SemanticCacheImage3 from "../images/semantic-cache-faq/3.png";
+
 export const amazonImages = [AmazonImage1, AmazonImage2];
 export const CommerceImages = [Commerce1, Commerce2];
 export const currencyConverterImages = [CurrencyConverterImage1];
@@ -184,6 +199,24 @@ export const synapseAIImages = [
   SynapseAIImage1,
   SynapseAIImage2,
   SynapseAIImage3,
+];
+
+export const ragAuditImages = [
+  RagAuditImage1,
+  RagAuditImage2,
+  RagAuditImage3,
+];
+
+export const llmJudgeImages = [
+  LLMJudgeImage1,
+  LLMJudgeImage2,
+  LLMJudgeImage3,
+];
+
+export const semanticCacheImages = [
+  SemanticCacheImage1,
+  SemanticCacheImage2,
+  SemanticCacheImage3,
 ];
 
 export const myntraImages = [
@@ -302,6 +335,16 @@ export const getProjectImages = (projectName) => {
     Youtube_Automation: youtubeAutomationImages,
     "CHINTU AI": chintuAIImages,
     CHINTU_AI: chintuAIImages,
+    "rag-prompt-injection-audit": ragAuditImages,
+    "RAG Prompt Injection & Defense Audit": ragAuditImages,
+    "RAG Prompt Injection Audit": ragAuditImages,
+    "llm-judge-audit": llmJudgeImages,
+    "LLM-as-a-Judge Bias Audit": llmJudgeImages,
+    "LLM Judge Bias Audit": llmJudgeImages,
+    "semantic-cache-faq": semanticCacheImages,
+    "Semantic Cache for FAQ Bot": semanticCacheImages,
+    "Semantic Cache FAQ Bot": semanticCacheImages,
+    "Semantic Cache": semanticCacheImages,
     Jedis: jedisImages,
     "Jedis": jedisImages,
     AegisDB: aegisDBImages,
