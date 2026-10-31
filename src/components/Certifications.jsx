@@ -54,23 +54,23 @@ export default function Certifications() {
   const achievements = [
     {
       title: "GitHub Contributions",
-      description: "500+ contributions in the last year",
+      description: "3,558+ verified lifetime contributions across 30+ public repositories with active production streaks",
       icon: "🚀",
     },
     {
-      title: "Projects Completed",
-      description: "15+ web applications built and deployed",
+      title: "Production Systems Shipped",
+      description: "30+ deployed applications, AI security frameworks, distributed systems & SaaS platforms",
       icon: "💻",
     },
     {
-      title: "Technologies Mastered",
-      description: "10+ programming languages and frameworks",
+      title: "Production Arsenal",
+      description: "15+ battle-tested frameworks, vector stores, distributed queues & systems languages",
       icon: "⚡",
     },
     {
-      title: "Problem Solving",
-      description: "100+ coding challenges solved",
-      icon: "🧩",
+      title: "System Reliability",
+      description: "99.8% production uptime across distributed microservices with automated zero-downtime releases",
+      icon: "🎯",
     },
   ];
 

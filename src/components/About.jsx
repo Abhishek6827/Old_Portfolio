@@ -17,18 +17,18 @@ export default function About() {
   const highlights = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full-Stack Development",
-      description: "Experienced in both frontend and backend technologies",
+      title: "AI Systems & LLM Evals",
+      description: "Multi-LLM routing, OWASP LLM01 injection defense & Cohen's Kappa calibration",
+    },
+    {
+      icon: <Cpu className="w-6 h-6" />,
+      title: "Core Systems & Database",
+      description: "Java 23 raw TCP socket engines, RESP protocol, B+Tree disk storage & semantic caching",
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
-      title: "Problem Solving",
-      description: "Passionate about creating innovative solutions",
-    },
-    {
-      icon: <Coffee className="w-6 h-6" />,
-      title: "Continuous Learning",
-      description: "Always exploring new technologies and best practices",
+      title: "Full-Stack SaaS Architecture",
+      description: "Founder @ CHINTU AI — Web, Electron (Windows/Mac), Android, RabbitMQ & Razorpay",
     },
   ];
 
@@ -121,9 +121,9 @@ export default function About() {
                 <span className="text-blue-400 font-semibold">
                   Abhishek Tiwari
                 </span>
-                , a passionate full-stack developer from Lucknow, India. I
-                specialize in building scalable SaaS solutions and
-                production-ready applications with modern web technologies.
+                , an AI Systems Architect &amp; Full-Stack Engineer from Lucknow, India. Founder @{" "}
+                <span className="text-cyan-400 font-semibold">CHINTU AI</span>. I specialize in building
+                autonomous AI agent memory, high-performance in-memory engines, and production-grade distributed platforms.
               </motion.p>
               <motion.p
                 className="text-lg leading-relaxed mb-6"
@@ -133,15 +133,10 @@ export default function About() {
                 }
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                🚀 My expertise spans across the entire development stack - from
-                crafting intuitive user interfaces with{" "}
-                <span className="text-blue-400">Next.js</span> and{" "}
-                <span className="text-blue-400">TypeScript</span>, to
-                implementing secure payment integrations with{" "}
-                <span className="text-green-400">Stripe</span> and
-                <span className="text-orange-400"> Zoho Payments</span>. I
-                specialize in building production-ready applications with robust
-                testing environments and automated workflows.
+                🚀 My engineering scope spans across the modern intelligence &amp; systems stack — from multi-LLM routing
+                across <span className="text-blue-400 font-semibold">Groq, Gemini, and OpenRouter</span> (&lt;400ms routing latency),
+                vector databases (<span className="text-cyan-400 font-semibold">Qdrant, ChromaDB</span>), and indirect prompt injection defense (OWASP LLM01),
+                to multi-platform clients on <span className="text-blue-400 font-semibold">Next.js 15, React 19, Electron, and Android</span>.
               </motion.p>
               <motion.p
                 className="text-lg leading-relaxed"
@@ -151,12 +146,9 @@ export default function About() {
                 }
                 transition={{ duration: 0.6, delay: 0.7 }}
               >
-                💡 I&apos;m experienced in API development and testing with{" "}
-                <span className="text-yellow-400">Postman</span>, webhook
-                implementations, Firebase hosting, real-time notifications via
-                Telegram, and seamless email integrations using Resend API. I
-                believe in writing clean, maintainable code and creating
-                user-centric applications that solve real-world problems.
+                💡 Experienced in high-throughput asynchronous architectures with <span className="text-yellow-400 font-semibold">RabbitMQ</span> worker
+                pipelines (63-language audio transcription), raw TCP network servers (Java 23 RESP protocol), embedded B+Tree databases,
+                and resilient webhook reconciliation on <span className="text-green-400 font-semibold">Razorpay</span> and <span className="text-orange-400 font-semibold">Stripe</span>.
               </motion.p>
             </div>
           </motion.div>

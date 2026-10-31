@@ -34,7 +34,7 @@ export default function Experience() {
     },
     {
       title: "Software Developer",
-      company: "Vasnaani Education",
+      company: "Vasnaani Sanskaran",
       period: "08/2024 - 10/2025",
       responsibilities: [
         "Introduced memoized Reselect selectors across 12 Redux components, optimizing state selectors and boosting frontend render performance by ~25%.",

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { Code2, Database, Globe } from "lucide-react";
+import { Code2, Database, Globe, Shield, Terminal, Zap, Bot } from "lucide-react";
 import { useRef } from "react";
 import {
   FaReact,
@@ -12,6 +12,8 @@ import {
   FaPython,
   FaGitAlt,
   FaAngular,
+  FaJava,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -31,6 +33,12 @@ import {
   SiPostgresql,
   SiPrisma,
   SiVercel,
+  SiRedis,
+  SiRabbitmq,
+  SiOpenai,
+  SiElectron,
+  SiAndroid,
+  SiPytest,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -48,59 +56,59 @@ export default function Skills() {
   ];
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: <Globe className="w-6 h-6" />,
+      title: "AI Systems & LLM Evals (Core Focus)",
+      icon: <Bot className="w-6 h-6" />,
       skills: [
-        { name: "Next.js", icon: <SiNextdotjs />, level: 90 },
-        { name: "React", icon: <FaReact />, level: 92 },
-        { name: "TypeScript", icon: <SiTypescript />, level: 88 },
-        { name: "JavaScript", icon: <FaJsSquare />, level: 90 },
-        { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 90 },
-        { name: "Redux", icon: <SiRedux />, level: 85 },
-        { name: "Angular", icon: <FaAngular />, level: 78 },
-        { name: "Socket.io", icon: <SiSocketdotio />, level: 82 },
-        { name: "HTML5", icon: <FaHtml5 />, level: 95 },
-        { name: "CSS3", icon: <FaCss3Alt />, level: 92 },
+        { name: "Multi-LLM Routing", icon: <SiOpenai />, level: 95 },
+        { name: "OWASP Injection Defense", icon: <Shield />, level: 94 },
+        { name: "LLM-as-a-Judge & Evals", icon: <Bot />, level: 92 },
+        { name: "Cohen's Kappa Calibration", icon: <Terminal />, level: 90 },
+        { name: "Semantic Caching", icon: <Zap />, level: 93 },
+        { name: "Vector Stores (Qdrant/Chroma)", icon: <Database />, level: 88 },
+        { name: "Pytest Security Testbeds", icon: <SiPytest />, level: 92 },
+        { name: "Prompt & JSON Schemas", icon: <Code2 />, level: 95 },
       ],
     },
     {
-      title: "Backend & Database",
+      title: "Backend & Core Systems Architecture",
       icon: <Database className="w-6 h-6" />,
       skills: [
-        { name: "Node.js", icon: <FaNodeJs />, level: 85 },
-        { name: "Express.js", icon: <SiExpress />, level: 82 },
-        { name: "Firebase", icon: <SiFirebase />, level: 88 },
-        { name: "MongoDB", icon: <SiMongodb />, level: 80 },
-        { name: "Python", icon: <FaPython />, level: 75 },
-        { name: "Django", icon: <SiDjango />, level: 70 },
-        { name: "PostgreSQL", icon: <SiPostgresql />, level: 78 },
-        { name: "Prisma", icon: <SiPrisma />, level: 80 },
-        { name: "MySQL", icon: <SiMysql />, level: 75 },
+        { name: "Java 23 Systems (RESP)", icon: <FaJava />, level: 90 },
+        { name: "TCP Sockets & Engine", icon: <Terminal />, level: 88 },
+        { name: "Node.js & Express", icon: <FaNodeJs />, level: 92 },
+        { name: "RabbitMQ Worker Queues", icon: <SiRabbitmq />, level: 86 },
+        { name: "Redis In-Memory Stores", icon: <SiRedis />, level: 90 },
+        { name: "PostgreSQL & Supabase", icon: <SiPostgresql />, level: 88 },
+        { name: "Python & FastAPI", icon: <FaPython />, level: 90 },
+        { name: "Firebase App Hosting", icon: <SiFirebase />, level: 88 },
       ],
     },
     {
-      title: "Payment & Integration",
-      icon: <Code2 className="w-6 h-6" />,
+      title: "Frontend & Cross-Platform Development",
+      icon: <Globe className="w-6 h-6" />,
       skills: [
-        { name: "Stripe", icon: <SiStripe />, level: 85 },
-        { name: "Zoho Payments", icon: <SiZoho />, level: 80 },
-        { name: "Postman API", icon: <SiPostman />, level: 90 },
-        { name: "Webhook Config", icon: <Code2 />, level: 85 },
-        { name: "Telegram API", icon: <SiTelegram />, level: 82 },
-        { name: "Resend API", icon: <Database />, level: 80 },
+        { name: "Next.js 15", icon: <SiNextdotjs />, level: 94 },
+        { name: "React 19", icon: <FaReact />, level: 95 },
+        { name: "TypeScript", icon: <SiTypescript />, level: 92 },
+        { name: "Electron Desktop (Win/Mac)", icon: <SiElectron />, level: 88 },
+        { name: "Android Native (.apk)", icon: <SiAndroid />, level: 82 },
+        { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 95 },
+        { name: "Redux Toolkit & Zustand", icon: <SiRedux />, level: 90 },
+        { name: "WebSockets & Real-Time", icon: <SiSocketdotio />, level: 88 },
       ],
     },
     {
-      title: "DevOps & Tools",
+      title: "DevOps, Security & Cloud Infrastructure",
       icon: <Code2 className="w-6 h-6" />,
       skills: [
-        { name: "Git & GitHub", icon: <FaGitAlt />, level: 90 },
-        { name: "Firebase CLI", icon: <SiFirebase />, level: 85 },
-        { name: "Firebase Hosting", icon: <SiFirebase />, level: 88 },
-        { name: "Ngrok", icon: <Globe />, level: 80 },
-        { name: "Vercel", icon: <SiVercel />, level: 85 },
-        { name: "VS Code", icon: <Code2 />, level: 92 },
-        { name: "Firebase Emulators", icon: <SiFirebase />, level: 82 },
+        { name: "Docker & Containerization", icon: <FaDocker />, level: 85 },
+        { name: "Git & CI/CD Pipelines", icon: <FaGitAlt />, level: 92 },
+        { name: "Vercel Edge Deployment", icon: <SiVercel />, level: 90 },
+        { name: "Postman API Testing", icon: <SiPostman />, level: 92 },
+        { name: "Razorpay & Stripe Webhooks", icon: <SiStripe />, level: 88 },
+        { name: "Zoho Payments Integration", icon: <SiZoho />, level: 86 },
+        { name: "Telegram Bot API", icon: <SiTelegram />, level: 85 },
+        { name: "Automated Test Suites", icon: <SiPytest />, level: 90 },
       ],
     },
   ];

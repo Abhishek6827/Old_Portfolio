@@ -35,7 +35,7 @@ const featuredProjects = [
   {
     name: "RAG Prompt Injection & Defense Audit",
     images: getProjectImages("rag-prompt-injection-audit"),
-    demo: "https://github.com/Abhishek6827/rag-prompt-injection-audit",
+    demo: "https://rag-prompt-injection-audit.vercel.app",
     tech: ["Python", "OWASP LLM01", "RAG", "Security Auditing", "Pytest", "Regex Guardrails"],
     description: "Empirical cybersecurity audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Neutralized 10/10 attacks with 0 false blocks on clean queries and 1.8ms overhead (98% test coverage).",
     color: "from-blue-600 to-indigo-700",
@@ -43,7 +43,7 @@ const featuredProjects = [
   {
     name: "LLM-as-a-Judge Bias Audit",
     images: getProjectImages("llm-judge-audit"),
-    demo: "https://github.com/Abhishek6827/llm-judge-audit",
+    demo: "https://llm-judge-audit.vercel.app",
     tech: ["Python", "LLM Evals", "Cohen's Kappa", "Bias Mitigation", "Pytest", "JSON Schema"],
     description: "Empirical bias audit measuring position bias, verbosity bias (+150 filler words), and self-preference in LLM-as-a-Judge pipelines. Implements bidirectional consensus calibration that boosted human agreement to 28/30 with Cohen's Kappa measurement (93% test coverage).",
     color: "from-purple-600 to-pink-700",
@@ -51,7 +51,7 @@ const featuredProjects = [
   {
     name: "Semantic Cache FAQ Bot",
     images: getProjectImages("semantic-cache-faq"),
-    demo: "https://github.com/Abhishek6827/semantic-cache-faq",
+    demo: "https://semantic-cache-faq.vercel.app",
     tech: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest"],
     description: "High-performance semantic caching system for LLM FAQ bots cutting LLM calls by 67% and reducing latency from 420ms to 1.2ms (350x speedup). Features automated cosine similarity threshold sweeps (0.75-0.95), Hindi/English lexical negation guard, and TTL/PII cache hygiene (84% test coverage).",
     color: "from-emerald-600 to-cyan-700",
@@ -67,7 +67,7 @@ const featuredProjects = [
   {
     name: "Jedis",
     images: getProjectImages("Jedis"),
-    demo: "https://github.com/Abhishek6827/Jedis",
+    demo: "https://jedis-redis.vercel.app",
     tech: ["Java", "Spring Boot", "TCP Sockets", "RESP Protocol", "Replication", "Docker", "Kubernetes"],
     description: "High-performance in-memory Redis server clone built from scratch in Java 23. Implements RESP wire protocol, multi-threaded TCP socket handling, thread-safe storage with TTL, ACID transactions with optimistic locking (MULTI/EXEC/WATCH), and Master-Slave replication with WAIT command synchronization.",
     color: "from-red-600 to-rose-700",
@@ -75,7 +75,7 @@ const featuredProjects = [
   {
     name: "AegisDB",
     images: getProjectImages("AegisDB"),
-    demo: "https://github.com/Abhishek6827/AegisDB",
+    demo: "https://aegis-db.vercel.app",
     tech: ["Java", "B+Tree", "Bitmap Index", "Storage Engine", "LRU Cache", "Disk Paging"],
     description: "High-performance embedded storage engine & B+Tree relational database built from scratch in Java 21. Features self-balancing B+Tree clustered indexes, compressed bitmap indexing for low-cardinality filters, 4KB page buffer pool with LRU eviction, and collection-level ReaderWriterLock isolation.",
     color: "from-emerald-600 to-teal-700",
@@ -83,7 +83,7 @@ const featuredProjects = [
   {
     name: "SynapseAI",
     images: getProjectImages("SynapseAI"),
-    demo: "https://github.com/Abhishek6827/SynapseAI",
+    demo: "https://synapse-ai-xi-black.vercel.app",
     tech: ["Python", "Qdrant", "OpenAI", "Mem0", "Neo4j", "Vector Search", "Docker"],
     description: "Production-grade long-term memory architecture for autonomous AI agents. Features a Two-Phase Memory Pipeline for selective salient fact extraction, automatic contradiction reconciliation (ADD/UPDATE/DELETE), local Qdrant vector database integration, and sub-150ms semantic context retrieval with 90% token savings.",
     color: "from-purple-600 to-indigo-700",
@@ -99,7 +99,7 @@ const featuredProjects = [
   {
     name: "Resume-Extension",
     images: getProjectImages("Resume-Extension"),
-    demo: "https://github.com/Abhishek6827/Resume-Extension",
+    demo: "https://resume.getchintu.com",
     tech: ["Next.js", "React", "TypeScript", "Spring Boot", "Java", "Groq", "NVIDIA", "LaTeX", "Tailwind CSS"],
     description: "AI resume tailoring platform & Chrome extension that aligns experience bullets with job descriptions and compiles ATS-compliant 1-page LaTeX PDFs via multi-LLM fallback routing.",
     color: "from-green-500 to-emerald-600",
@@ -496,7 +496,7 @@ function Hero() {
                   </span>{" "}
                   |{" "}
                   <span className="text-cyan-400 font-semibold">
-                    SaaS Builder
+                    SaaS Founder @ CHINTU AI
                   </span>
                 </motion.p>
               </div>

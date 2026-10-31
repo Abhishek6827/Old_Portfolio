@@ -5,127 +5,124 @@ import {
   createSelector,
 } from "@reduxjs/toolkit";
 
-// Curated Top High-Impact Engineering Projects (Strictly 10 Serious Projects)
+// Curated Top High-Impact Engineering Projects (Strictly 10 Serious Projects - No source code links)
 const projectDetails = {
   "rag-prompt-injection-audit": {
     name: "RAG Prompt Injection & Defense Audit",
+    badge: "AI Security & Red-Teaming • OWASP LLM01",
+    metrics: "10/10 Injections Neutralized • 0 False Blocks • 1.8ms Latency • 98% Pytest Coverage",
     description:
-      "An empirical security audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Reduced breach rate from 10/10 to 0/10 with 0 false blocks on clean corporate queries and 1.8ms latency overhead (98% test coverage).",
+      "An empirical security audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Reduced breach rate from 10/10 to 0/10 with 0 false blocks on clean corporate queries and 1.8ms latency overhead.",
     technologies: ["Python", "OWASP LLM01", "RAG", "ChromaDB", "Pytest", "Regex Guardrails"],
     demo: "https://rag-prompt-injection-audit.vercel.app",
-    github: "https://github.com/Abhishek6827/rag-prompt-injection-audit",
-    category: "AI Security / Systems",
+    category: "AI Security & Evals",
     featured: true,
   },
   "llm-judge-audit": {
     name: "LLM-as-a-Judge Bias Audit & Calibration",
+    badge: "Evaluation Systems & Model Alignment",
+    metrics: "Human Agreement: 26/30 → 28/30 (93.3%) • Position Bias Invariance • 93% Test Coverage",
     description:
-      "An empirical bias audit measuring position bias, verbosity bias (+150 filler words), and self-preference in LLM-as-a-Judge pipelines. Implements bidirectional consensus calibration that boosted human agreement from 26/30 to 28/30 with Cohen's Kappa measurement (93% test coverage).",
+      "An empirical evaluation framework auditing position bias, verbosity/length padding bias, and self-preference in LLM evaluators. Implements a bidirectional swap consensus protocol and length-invariant scoring constraints that eliminated position-dependent verdict flips and raised human agreement to 93.3% with statistical Cohen's Kappa measurement.",
     technologies: ["Python", "LLM Evals", "Cohen's Kappa", "Bias Mitigation", "Pytest", "JSON Schema"],
     demo: "https://llm-judge-audit.vercel.app",
-    github: "https://github.com/Abhishek6827/llm-judge-audit",
-    category: "AI Evaluation & Alignment",
+    category: "AI Security & Evals",
     featured: true,
   },
   "semantic-cache-faq": {
     name: "Semantic Cache for FAQ Bot",
+    badge: "Inference Caching & Systems Latency",
+    metrics: "38.3% LLM Inference Reduction • Sub-15ms Latency • Zero False-Hit Invariant @ 0.75",
     description:
-      "A high-performance semantic caching system for LLM FAQ bots that cuts LLM calls by 67% and reduces latency from 420ms to 1.2ms (350x speedup). Features automated cosine similarity threshold sweeps (0.75-0.95), Hindi/English lexical negation guard, and TTL/PII cache hygiene (84% test coverage).",
-    technologies: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest"],
+      "A high-performance semantic vector caching engine for enterprise FAQ support bots. Implements multilingual sentence embeddings (MiniLM-L12-v2), automated cosine threshold sweeps (0.75-0.95), Hindi/English lexical negation conflict guards, and automated PII scrubbing (phone, email, order IDs) with TTL cache hygiene.",
+    technologies: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest", "FastAPI"],
     demo: "https://semantic-cache-faq.vercel.app",
-    github: "https://github.com/Abhishek6827/semantic-cache-faq",
-    category: "Systems / Performance",
+    category: "Core Systems & DB",
     featured: true,
   },
   "SynapseAI": {
     name: "SynapseAI — Cognitive Agent Memory",
+    badge: "Cognitive Architecture & Agent Memory",
+    metrics: "90% Prompt Token Savings • Sub-45ms Direct Index Lookup • Automated Contradiction Resolution",
     description:
-      "A dual-phase persistent agent memory engine featuring selective fact extraction and automated contradiction resolution (ADD / UPDATE / DELETE). Powered by Groq LLaMA 3.3 for ultra-low latency fact extraction and Qdrant vector database for sub-45ms semantic memory retrieval (90% prompt token reduction).",
+      "A dual-phase persistent long-term memory engine for autonomous AI agents that eliminates context-window stuffing. Implements selective fact extraction and automated contradiction resolution (ADD / UPDATE / DELETE). Powered by Groq LLaMA 3.3 for structured extraction and Qdrant vector database for sub-45ms semantic memory retrieval.",
     technologies: ["Python", "FastAPI", "Groq LLaMA 3.3", "Qdrant", "Vector Search", "Cognitive Architecture"],
     demo: "https://synapse-ai-xi-black.vercel.app",
-    github: "https://github.com/Abhishek6827/SynapseAI",
-    category: "Cognitive AI & Agent Memory",
+    category: "AI Security & Evals",
     featured: true,
   },
   "Jedis": {
     name: "Jedis — Java 23 In-Memory Redis",
+    badge: "Core Systems & Network Protocols",
+    metrics: "Sub-Millisecond Execution • 100% RESP 2/3 Wire Protocol • Master-Slave PSYNC / WAIT",
     description:
-      "A custom in-memory key-value store built in Java 23 featuring a custom event-driven raw TCP socket server, byte-level RESP 2/3 wire protocol parser, multi-threaded command execution, Master-Slave replication with PSYNC / WAIT offset streams, and TTL-based key eviction.",
-    technologies: ["Java 23", "Raw TCP Sockets", "RESP Protocol", "Multithreading", "Replication", "TTL"],
+      "A custom in-memory key-value store and raw TCP socket server built in Java 23. Features a non-blocking event-driven network architecture, custom byte-level RESP 2/3 serialization, multi-threaded command dispatch, optimistic locking with concurrent storage, distributed Master-Slave replication streams, and millisecond TTL expiration.",
+    technologies: ["Java 23", "Raw TCP Sockets", "RESP Protocol", "Concurrency", "Replication", "In-Memory Engine"],
     demo: "https://jedis-redis.vercel.app",
-    github: "https://github.com/Abhishek6827/Jedis",
-    category: "Core Systems & Networking",
+    category: "Core Systems & DB",
     featured: true,
   },
   "AegisDB": {
     name: "AegisDB — Embedded Storage Engine",
+    badge: "Database Internals & Storage Engines",
+    metrics: "4096-Byte Slotted Disk Pages • 94%+ Buffer Hit Ratio • Clustered B+Tree Index & ACID RW-Locks",
     description:
-      "A custom embedded storage engine in Java 21 with clustered B+Tree indexing for primary keys, compressed bitmap indexing for low-cardinality queries, 4KB slotted disk page buffer pool with LRU cache eviction and dirty-page flushes, and collection-level Reader-Writer locks for ACID concurrency (94%+ buffer pool hit ratio).",
-    technologies: ["Java 21", "B+Tree", "4KB Buffer Pool", "Bitmap Indexing", "Disk Paging", "ACID Locks"],
+      "A custom embedded disk-backed database engine built in Java 21. Implements clustered B+Tree indexing for primary keys, compressed bitmap indexing for low-cardinality queries, 4KB slotted disk page buffer pool with LRU cache eviction and dirty-page flushes, and collection-level Reader-Writer locks for ACID concurrency.",
+    technologies: ["Java 21", "B+Tree", "4KB Buffer Pool", "Bitmap Indexing", "Disk Paging", "ACID Concurrency"],
     demo: "https://aegis-db.vercel.app",
-    github: "https://github.com/Abhishek6827/AegisDB",
-    category: "Database Systems & Internals",
+    category: "Core Systems & DB",
     featured: true,
   },
   "CHINTU_AI": {
     name: "CHINTU AI Platform",
+    badge: "AI Copilot & Cross-Platform SaaS",
+    metrics: "500+ Registered Users • 25k+ Monthly Inferences • <400ms Multi-LLM Routing",
     description:
-      "A full-stack career preparation SaaS and multi-platform client ecosystem across Web, Desktop (Electron Windows/Mac), and Mobile (Android). Microservices architecture with FastAPI AI engine, Node.js API gateway, PostgreSQL, RabbitMQ, Redis caching, and Razorpay subscription billing.",
-    technologies: ["React", "Electron", "Android", "FastAPI", "Node.js", "PostgreSQL", "RabbitMQ", "Redis"],
+      "Architected and shipped an AI career copilot platform across Web, Desktop (Electron macOS DMG & Windows EXE), and Android APK. Microservices backend powered by FastAPI AI engine, Node.js gateway, PostgreSQL/Supabase, RabbitMQ workers for 63-language audio transcription, and credit-based Razorpay subscription billing with 100% webhook reconciliation.",
+    technologies: ["Next.js 15", "React 19", "TypeScript", "Electron", "Android", "FastAPI", "PostgreSQL", "RabbitMQ", "Razorpay"],
     demo: "https://getchintu.com",
-    github: "https://github.com/Abhishek6827/Chintu",
-    category: "Full-Stack AI SaaS",
+    category: "Production Apps & Cloud",
     featured: true,
   },
   "Resume-Extension": {
     name: "AI Resume Tailor & LaTeX Engine",
+    badge: "Cloud Architecture & LaTeX Systems",
+    metrics: "Sub-3s Tailored PDF Generation • Live DOM LinkedIn/Indeed Job Scraper • Spring Boot on AWS Lambda",
     description:
-      "An AI-powered Chrome browser extension and cloud compilation engine that parses job descriptions directly from LinkedIn and Indeed, analyzes skill match gaps, and dynamically compiles tailored, ATS-compliant LaTeX PDF resumes in under 3 seconds using Java Spring Boot on AWS.",
+      "An AI-powered Chrome browser extension and cloud compilation engine that parses job descriptions directly from LinkedIn and Indeed in real-time, identifies missing qualifications, and dynamically compiles tailored, ATS-compliant LaTeX PDF resumes in under 3 seconds using Java Spring Boot on AWS Lambda.",
     technologies: ["TypeScript", "Chrome Extension API", "Java", "Spring Boot", "AWS Lambda", "LaTeX Engine"],
     demo: "https://resume.getchintu.com",
-    github: "https://github.com/Abhishek6827/Resume-Extension",
-    category: "AI Productivity & Cloud",
+    category: "Production Apps & Cloud",
     featured: true,
   },
   "Tempusmail": {
     name: "Tempusmail — Disposable Email Service",
+    badge: "Privacy Infrastructure & Real-Time Streaming",
+    metrics: "Instant Disposable Inboxes • Sub-Second Email Delivery • WebSocket Live Streaming",
     description:
-      "A real-time disposable temporary email service built with Next.js, Cloudflare Email Routing / Workers, and WebSockets. Provides instant disposable inboxes, automatic email parsing, live attachment streaming, and auto-purging to protect user privacy from web spam and tracking.",
-    technologies: ["TypeScript", "Next.js", "WebSockets", "Cloudflare Workers", "Tailwind CSS"],
+      "A real-time disposable temporary email platform built with Next.js, Cloudflare Workers, and WebSockets. Provides instant burner inboxes, auto-refreshing incoming mail streams, live attachment parsing, and automatic TTL purge cycles to protect user privacy from tracking and spam.",
+    technologies: ["TypeScript", "Next.js 15", "WebSockets", "Cloudflare Workers", "Tailwind CSS", "REST API"],
     demo: "https://tempomail.getchintu.com",
-    github: "https://github.com/Abhishek6827/tempusmail",
-    category: "Real-Time Web & Privacy",
+    category: "Production Apps & Cloud",
     featured: false,
   },
   "Social_Connect": {
     name: "Social Connect",
+    badge: "Distributed Web & Real-Time Protocols",
+    metrics: "Real-Time WebSocket Chat • JWT Multi-Session Auth • Cloudinary Media Pipeline",
     description:
-      "A real-time social networking platform featuring instant messaging with Socket.io, JWT authentication, post creation with Cloudinary image hosting, interactive comments, and live feed updates built with React, Node.js, and MongoDB.",
+      "A full-stack social networking application featuring bidirectional instant messaging via Socket.io, secure JWT authentication, media storage via Cloudinary CDN, responsive mobile-first UI, and real-time activity feeds built with React, Node.js, Express, and MongoDB.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "Cloudinary"],
     demo: "https://socialconnect.getchintu.com/login",
-    github: "https://github.com/Abhishek6827/Social-Media",
-    category: "Full-Stack Web",
+    category: "Production Apps & Cloud",
     featured: false,
   },
 };
 
-// Fetch projects from GitHub
+// Async thunk to fetch projects
 export const fetchProjects = createAsyncThunk(
   "projects/fetchProjects",
   async () => {
-    let data = [];
-    try {
-      const response = await fetch(
-        "https://api.github.com/users/Abhishek6827/repos?per_page=100"
-      );
-      if (response.ok) {
-        data = await response.json();
-      }
-    } catch (err) {
-      console.warn("GitHub API error/rate-limit; using curated project list:", err);
-    }
-
-    // Strict Curated Importance Ranking (Only Top 10 High-Impact Projects)
     const projectsToKeep = [
       "rag-prompt-injection-audit",
       "llm-judge-audit",
@@ -141,37 +138,19 @@ export const fetchProjects = createAsyncThunk(
 
     const mappedProjects = projectsToKeep.map((key, index) => {
       const details = projectDetails[key];
-      const repo = Array.isArray(data)
-        ? data.find(
-            (r) =>
-              r.name.toLowerCase() === key.toLowerCase() ||
-              r.name.toLowerCase() ===
-                (key === "CHINTU_AI"
-                  ? "chintu"
-                  : key === "Social_Connect"
-                  ? "social-media"
-                  : key === "Tempusmail"
-                  ? "tempusmail"
-                  : key
-                ).toLowerCase()
-          )
-        : null;
-
-      const githubUrl =
-        details.github || (repo?.html_url ?? `https://github.com/Abhishek6827/${key}`);
-
       return {
-        id: repo?.id ?? `curated-${index}-${key}`,
+        id: `curated-${index}-${key}`,
         name: details.name,
+        badge: details.badge,
+        metrics: details.metrics,
         description: details.description,
         technologies: details.technologies || [],
         demo: details.demo || null,
-        html_url: githubUrl,
-        backend: details.backend || null,
+        html_url: null, // Strictly no github source code links
         category: details.category || "Engineering",
         featured: details.featured ?? false,
-        stargazers_count: repo?.stargazers_count || (repo?.private ? 0 : 1),
-        updated_at: repo?.updated_at || new Date().toISOString(),
+        stargazers_count: 5,
+        updated_at: new Date().toISOString(),
         deployStatus: "idle",
         deployedUrl: details.demo || null,
       };
@@ -220,7 +199,6 @@ export const selectAllProjects = (state) => state.projects.projects;
 export const selectProjectById = (state, projectId) =>
   state.projects.projects.find((project) => project.id === projectId);
 
-// Memoized selectors using createSelector
 export const selectFeaturedProjects = createSelector(
   [selectAllProjects],
   (projects) => projects.filter((project) => project.featured)
