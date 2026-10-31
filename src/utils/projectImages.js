@@ -355,8 +355,32 @@ export const getProjectImages = (projectName) => {
     "Resume-Extension": resumeExtensionImages,
     "Resume Extension": resumeExtensionImages,
     Resume_Extension: resumeExtensionImages,
+    "AI Resume Tailor & LaTeX Engine": resumeExtensionImages,
+    "SynapseAI — Cognitive Agent Memory": synapseAIImages,
+    "Jedis — Java 23 In-Memory Redis": jedisImages,
+    "AegisDB — Embedded Storage Engine": aegisDBImages,
+    "CHINTU AI Platform": chintuAIImages,
+    "Tempusmail — Disposable Email Service": tempusmailImages,
   };
-  return imageMap[projectName] || null;
+
+  if (!projectName) return null;
+  if (imageMap[projectName]) return imageMap[projectName];
+
+  const withSpaces = projectName.replace(/_/g, " ");
+  if (imageMap[withSpaces]) return imageMap[withSpaces];
+
+  const withUnderscores = projectName.replace(/ /g, "_");
+  if (imageMap[withUnderscores]) return imageMap[withUnderscores];
+
+  const norm = projectName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  for (const [key, imgs] of Object.entries(imageMap)) {
+    const keyNorm = key.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (norm === keyNorm || norm.startsWith(keyNorm) || keyNorm.startsWith(norm)) {
+      return imgs;
+    }
+  }
+
+  return null;
 };
 
 export const getProjectBackend = (projectName) => {
