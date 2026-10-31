@@ -197,7 +197,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "A high-performance in-memory Redis server clone built from scratch in Java 23 and Spring Framework. Features full implementation of the RESP wire protocol, multi-threaded TCP socket connection handling, thread-safe storage with TTL auto-expiration, ACID transactions with optimistic locking (MULTI/EXEC/WATCH), and distributed Master-Slave replication with PSYNC/WAIT command propagation.",
         technologies: ["Java", "Spring Boot", "TCP Sockets", "RESP Protocol", "Replication", "Docker", "Kubernetes"],
-        demo: "https://github.com/Abhishek6827/Jedis",
+        demo: "https://jedis-redis.vercel.app",
         category: "Systems / Backend",
         featured: true,
       },
@@ -205,7 +205,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "A lightweight, high-performance embedded database storage engine written from scratch in Java 21. Implements custom B+Tree indexing for unique and clustered records, compressed bitmap indexing for low-cardinality queries, binary model serialization, a 4KB disk page buffer pool with LRU eviction, and collection-level Reader-Writer Lock concurrency.",
         technologies: ["Java", "B+Tree", "Bitmap Index", "Storage Engine", "LRU Cache", "Disk Paging"],
-        demo: "https://github.com/Abhishek6827/AegisDB",
+        demo: "https://aegis-db.vercel.app",
         category: "Database / Systems",
         featured: true,
       },
@@ -213,7 +213,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "A production-grade long-term memory engine and cognitive architecture for autonomous AI agents. Features a Two-Phase Memory Pipeline that extracts salient user facts, automatically resolves contradictions against stored knowledge, and integrates with Qdrant Vector DB for sub-150ms semantic memory retrieval with 90% token savings.",
         technologies: ["Python", "Qdrant", "OpenAI", "Mem0", "Vector Search", "Docker"],
-        demo: "https://github.com/Abhishek6827/SynapseAI",
+        demo: "https://synapse-ai-xi-black.vercel.app",
         category: "AI / Machine Learning",
         featured: true,
       },
