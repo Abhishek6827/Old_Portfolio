@@ -22,7 +22,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "An empirical security audit and 3-tier defense-in-depth framework (XML Data Spotlighting, Heuristic Pre-Retrieval Scanner, Canary Regex Redactor) neutralizing indirect prompt injection attacks (OWASP LLM01). Reduced breach rate from 10/10 to 0/10 with 0 false blocks on clean corporate queries and 1.8ms latency overhead (98% test coverage).",
         technologies: ["Python", "OWASP LLM01", "RAG", "Security Auditing", "Pytest", "Regex Guardrails"],
-        demo: "https://github.com/Abhishek6827/rag-prompt-injection-audit",
+        demo: "https://rag-prompt-injection-audit.vercel.app",
         category: "AI Security / Systems",
         featured: true,
       },
@@ -30,7 +30,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "An empirical bias audit measuring position bias, verbosity bias (+150 filler words), and self-preference in LLM-as-a-Judge pipelines. Implements bidirectional consensus calibration that boosted human agreement from 26/30 to 28/30 with Cohen's Kappa measurement (93% test coverage).",
         technologies: ["Python", "LLM Evals", "Cohen's Kappa", "Bias Mitigation", "Pytest", "JSON Schema"],
-        demo: "https://github.com/Abhishek6827/llm-judge-audit",
+        demo: "https://llm-judge-audit.vercel.app",
         category: "AI Evaluation & Alignment",
         featured: true,
       },
@@ -38,7 +38,7 @@ export const fetchProjects = createAsyncThunk(
         description:
           "A high-performance semantic caching system for LLM FAQ bots that cuts LLM calls by 67% and reduces latency from 420ms to 1.2ms (350x speedup). Features automated cosine similarity threshold sweeps (0.75-0.95), Hindi/English lexical negation guard, and TTL/PII cache hygiene (84% test coverage).",
         technologies: ["Python", "Sentence-Transformers", "Semantic Cache", "Vector Similarity", "Pytest"],
-        demo: "https://github.com/Abhishek6827/semantic-cache-faq",
+        demo: "https://semantic-cache-faq.vercel.app",
         category: "Systems / Performance",
         featured: true,
       },
